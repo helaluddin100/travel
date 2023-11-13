@@ -1,12 +1,13 @@
 // App.js
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 
 function App() {
+
   return (
     <div className="app-con">
       <BrowserRouter>
