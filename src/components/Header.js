@@ -2,11 +2,11 @@ import React from "react";
 
 function Header() {
   return (
-    <header id="header" class="wide-fat">
-      <div class="container">
-        <div class="col-xs-12 col-sm-2 no-margin">
-          <div class="branding">
-            <h1 class="site-title">
+    <header id="header" className="wide-fat">
+      <div className="container">
+        <div className="col-xs-12 col-sm-2 no-margin">
+          <div className="branding">
+            <h1 className="site-title">
               <a href="#">
                 <img src="assets/img/site-logo.png" alt="Traveline" />{" "}
               </a>
@@ -14,17 +14,21 @@ function Header() {
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-10 no-margin">
+        <div className="col-xs-12 col-sm-10 no-margin">
           <div id="main-menu">
-            <nav class="navigation">
-              <ul class="hidden-xs hidden-sm hidden-md">
-                <li class="menu-item about-us">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="icon_group"></i> Home
+            <nav className="navigation">
+              <ul className="hidden-xs hidden-sm hidden-md">
+                <li className="menu-item about-us">
+                  <a
+                    className="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                  >
+                    <i className="icon_group"></i> Home
                   </a>
 
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="active" role="presentation">
+                  <ul className="dropdown-menu" role="menu">
+                    <li className="active" role="presentation">
                       <a role="menuitem" tabindex="-1" href="index.html">
                         Homepage-1
                       </a>
@@ -40,19 +44,23 @@ function Header() {
                   </ul>
                 </li>
 
-                <li class="menu-item destinations">
+                <li className="menu-item destinations">
                   <a href="destinations.html">
-                    <i class="icon_pin"></i> Destinations
+                    <i className="icon_pin"></i> Destinations
                   </a>
                 </li>
 
-                <li class="menu-item our-travel">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="icon_globe_alt"></i> Our Travel
+                <li className="menu-item our-travel">
+                  <a
+                    className="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                  >
+                    <i className="icon_globe_alt"></i> Our Travel
                   </a>
 
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="active" role="presentation">
+                  <ul className="dropdown-menu" role="menu">
+                    <li className="active" role="presentation">
                       <a role="menuitem" tabindex="-1" href="our-travel.html">
                         our travel
                       </a>
@@ -84,19 +92,23 @@ function Header() {
                   </ul>
                 </li>
 
-                <li class="menu-item special-offers">
+                <li className="menu-item special-offers">
                   <a href="special-offers.html">
-                    <i class="icon_ribbon"></i> Special Offers
+                    <i className="icon_ribbon"></i> Special Offers
                   </a>
                 </li>
 
-                <li class="menu-item hotel">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="icon_building_alt"></i> List
+                <li className="menu-item hotel">
+                  <a
+                    className="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                  >
+                    <i className="icon_building_alt"></i> List
                   </a>
 
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="active" role="presentation">
+                  <ul className="dropdown-menu" role="menu">
+                    <li className="active" role="presentation">
                       <a role="menuitem" tabindex="-1" href="hotel-list.html">
                         hotel list
                       </a>
@@ -128,13 +140,17 @@ function Header() {
                   </ul>
                 </li>
 
-                <li class="menu-item shortcodes">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="icon_map"></i> Hotels
+                <li className="menu-item shortcodes">
+                  <a
+                    className="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                  >
+                    <i className="icon_map"></i> Hotels
                   </a>
 
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="active" role="presentation">
+                  <ul className="dropdown-menu" role="menu">
+                    <li className="active" role="presentation">
                       <a role="menuitem" tabindex="-1" href="hotel-detail.html">
                         hotel detail
                       </a>
@@ -166,14 +182,14 @@ function Header() {
                   </ul>
                 </li>
 
-                <li class="menu-item contact">
+                <li className="menu-item contact">
                   <a href="page-site-map.html">
-                    <i class="icon_contacts"></i> Pages
+                    <i className="icon_contacts"></i> Pages
                   </a>
                 </li>
               </ul>
 
-              <select class="top-drop-menu nav visible-sm visible-xs visible-md">
+              <select className="top-drop-menu nav visible-sm visible-xs visible-md">
                 <optgroup label="Homepage">
                   <option value="index.html">Homepage-1</option>
 
@@ -245,50 +261,50 @@ function Header() {
         </div>
       </div>
 
-      <div class="toggle-menu-holder">
-        <a class="toggle-menu" href="#"></a>
+      <div className="toggle-menu-holder">
+        <a className="toggle-menu" href="#"></a>
 
-        <div class="menu-body closed">
+        <div className="menu-body closed">
           <ul>
             <li>
               <a data-toggle="modal" data-target="#loginBox" href="#">
-                <i class="fa fa-lock"></i> login
+                <i className="fa fa-lock"></i> login
               </a>
             </li>
 
             <li>
               <a href="#">
-                <i class="fa fa-user"></i> register
+                <i className="fa fa-user"></i> register
               </a>
             </li>
 
             <li>
               <a href="#">
-                <i class="fa fa-bullseye"></i> newsletter
+                <i className="fa fa-bullseye"></i> newsletter
               </a>
             </li>
 
             <li>
               <a href="#">
-                <i class="fa fa-volume-down"></i> newletter
+                <i className="fa fa-volume-down"></i> newletter
               </a>
             </li>
 
             <li>
               <a href="#">
-                <i class="fa fa-comments"></i> blog
+                <i className="fa fa-comments"></i> blog
               </a>
             </li>
 
             <li>
               <a href="#">
-                <i class="fa fa-phone"></i> support center
+                <i className="fa fa-phone"></i> support center
               </a>
             </li>
 
             <li>
               <a href="#">
-                <i class="fa fa-dollar"></i> price
+                <i className="fa fa-dollar"></i> price
               </a>
             </li>
           </ul>

@@ -9,14 +9,14 @@ const OurTravel = () => {
   };
   return (
     <>
-      <section id="our-travel" class="section wide-fat">
-        <div class="container">
-          <article id="post-4" class="our-travel section-intro">
-            <h1 class="page-title">
-              Our <span class="higlight">Travel</span>
+      <section id="our-travel" className="section wide-fat">
+        <div className="container">
+          <article id="post-4" className="our-travel section-intro">
+            <h1 className="page-title">
+              Our <span className="higlight">Travel</span>
             </h1>
 
-            <div class="entry-content">
+            <div className="entry-content">
               <p>
                 Integer sollicitudin ligula non enim sodales, non lacinia nunc
                 ornare. Sed commodo tempor dapibus.
@@ -33,7 +33,7 @@ const OurTravel = () => {
             id="uncontrolled-tab-example"
             className="mb-3"
           >
-            <div class="controls">
+            <div className="controls">
               <ul>
                 <li
                   class={`${activeTravel === 1 ? "filter active" : "filter"} `}
@@ -79,7 +79,7 @@ const OurTravel = () => {
               </ul>
             </div>
 
-            <div id="Grid" class="row">
+            <div id="Grid" className="row">
               <div
                 className={
                   activeTravel === 1
@@ -87,22 +87,22 @@ const OurTravel = () => {
                     : "tour-items"
                 }
               >
-                <div class="col-md-6 col-sm-12 col-xs-12 tour-category-item">
-                  <div class="inner">
-                    <div class="part">
-                      <h3 class="category-heading">Asia Tours</h3>
+                <div className="col-md-6 col-sm-12 col-xs-12 tour-category-item">
+                  <div className="inner">
+                    <div className="part">
+                      <h3 className="category-heading">Asia Tours</h3>
 
-                      <div class="featured-tour">
+                      <div className="featured-tour">
                         <a href="#" title="Siam Paragon, Bangkok">
                           <img
                             src="assets/images/content/featured-tour-1.png"
                             alt="Siam Paragon, Bangkok"
-                            class="responsive-image"
+                            className="responsive-image"
                           />
                         </a>
 
-                        <div class="entry">
-                          <article class="entry-content">
+                        <div className="entry">
+                          <article className="entry-content">
                             <h1>
                               <a href="#" title="Siam Paragon, Bangkok">
                                 Siam Paragon, Bangkok
@@ -117,9 +117,9 @@ const OurTravel = () => {
                             </p>
                           </article>
 
-                          <div class="entry-meta">
-                            <div class="star-holder">
-                              <div class="star">
+                          <div className="entry-meta">
+                            <div className="star-holder">
+                              <div className="star">
                                 <img
                                   src="assets/images/star-on.png"
                                   alt="1"
@@ -149,11 +149,11 @@ const OurTravel = () => {
                               </div>
                             </div>
 
-                            <span class="review">
+                            <span className="review">
                               <a href="#">24 Reviews</a>
                             </span>
 
-                            <span class="go-detail">
+                            <span className="go-detail">
                               <a href="#">More</a>
                             </span>
                           </div>
@@ -161,14 +161,14 @@ const OurTravel = () => {
                       </div>
                     </div>
 
-                    <div class="part">
-                      <h3 class="list-heading">Hotel List</h3>
+                    <div className="part">
+                      <h3 className="list-heading">Hotel List</h3>
 
-                      <div class="hotel-lists">
+                      <div className="hotel-lists">
                         <ul>
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Diamond Hotel"
                             >
@@ -177,33 +177,33 @@ const OurTravel = () => {
                                 alt="Diamond Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Diamond Hotel">
                                   Diamond Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $150
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Hotel Name Here"
                             >
@@ -212,33 +212,33 @@ const OurTravel = () => {
                                 alt="Hotel Name Here"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Hotel Name Here">
                                   Hotel Name Here
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $199
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="AdelFox Hotel"
                             >
@@ -247,33 +247,33 @@ const OurTravel = () => {
                                 alt="AdelFox Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="AdelFox Hotel">
                                   AdelFox Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $100
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
                         </ul>
 
-                        <div class="load-more-hotel">
-                          <a href="#" class="button wide-fat">
+                        <div className="load-more-hotel">
+                          <a href="#" className="button wide-fat">
                             Load More Hotel
                           </a>
                         </div>
@@ -282,22 +282,22 @@ const OurTravel = () => {
                   </div>
                 </div>
 
-                <div class=" col-md-6 col-sm-12 col-xs-12 tour-category-item">
-                  <div class="inner">
-                    <div class="part">
-                      <h3 class="category-heading">Asia Tours</h3>
+                <div className=" col-md-6 col-sm-12 col-xs-12 tour-category-item">
+                  <div className="inner">
+                    <div className="part">
+                      <h3 className="category-heading">Asia Tours</h3>
 
-                      <div class="featured-tour">
+                      <div className="featured-tour">
                         <a href="#" title="Siam Paragon, Bangkok">
                           <img
                             src="assets/images/content/featured-tour-2.png"
                             alt="Siam Paragon, Bangkok"
-                            class="responsive-image"
+                            className="responsive-image"
                           />
                         </a>
 
-                        <div class="entry">
-                          <article class="entry-content">
+                        <div className="entry">
+                          <article className="entry-content">
                             <h1>
                               <a href="#" title="Siam Paragon, Bangkok">
                                 Siam Paragon, Bangkok
@@ -312,9 +312,9 @@ const OurTravel = () => {
                             </p>
                           </article>
 
-                          <div class="entry-meta">
-                            <div class="star-holder">
-                              <div class="star">
+                          <div className="entry-meta">
+                            <div className="star-holder">
+                              <div className="star">
                                 <img
                                   src="assets/images/star-on.png"
                                   alt="1"
@@ -344,11 +344,11 @@ const OurTravel = () => {
                               </div>
                             </div>
 
-                            <span class="review">
+                            <span className="review">
                               <a href="#">24 Reviews</a>
                             </span>
 
-                            <span class="go-detail">
+                            <span className="go-detail">
                               <a href="#">More</a>
                             </span>
                           </div>
@@ -356,14 +356,14 @@ const OurTravel = () => {
                       </div>
                     </div>
 
-                    <div class="part">
-                      <h3 class="list-heading">Hotel List</h3>
+                    <div className="part">
+                      <h3 className="list-heading">Hotel List</h3>
 
-                      <div class="hotel-lists">
+                      <div className="hotel-lists">
                         <ul>
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Diamond Hotel"
                             >
@@ -372,33 +372,33 @@ const OurTravel = () => {
                                 alt="Diamond Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Diamond Hotel">
                                   Diamond Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $150
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Hotel Name Here"
                             >
@@ -407,33 +407,33 @@ const OurTravel = () => {
                                 alt="Hotel Name Here"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Hotel Name Here">
                                   Hotel Name Here
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $199
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="AdelFox Hotel"
                             >
@@ -442,33 +442,33 @@ const OurTravel = () => {
                                 alt="AdelFox Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="AdelFox Hotel">
                                   AdelFox Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $100
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
                         </ul>
 
-                        <div class="load-more-hotel">
-                          <a href="#" class="button wide-fat">
+                        <div className="load-more-hotel">
+                          <a href="#" className="button wide-fat">
                             Load More Hotel
                           </a>
                         </div>
@@ -477,22 +477,22 @@ const OurTravel = () => {
                   </div>
                 </div>
 
-                <div class=" col-md-6 col-sm-12 col-xs-12 tour-category-item">
-                  <div class="inner">
-                    <div class="part">
-                      <h3 class="category-heading">Oceania Tours</h3>
+                <div className=" col-md-6 col-sm-12 col-xs-12 tour-category-item">
+                  <div className="inner">
+                    <div className="part">
+                      <h3 className="category-heading">Oceania Tours</h3>
 
-                      <div class="featured-tour">
+                      <div className="featured-tour">
                         <a href="#" title="Siam Paragon, Bangkok">
                           <img
                             src="assets/images/content/featured-tour-3.png"
                             alt="Siam Paragon, Bangkok"
-                            class="responsive-image"
+                            className="responsive-image"
                           />
                         </a>
 
-                        <div class="entry">
-                          <article class="entry-content">
+                        <div className="entry">
+                          <article className="entry-content">
                             <h1>
                               <a href="#" title="Siam Paragon, Bangkok">
                                 Siam Paragon, Bangkok
@@ -507,9 +507,9 @@ const OurTravel = () => {
                             </p>
                           </article>
 
-                          <div class="entry-meta">
-                            <div class="star-holder">
-                              <div class="star">
+                          <div className="entry-meta">
+                            <div className="star-holder">
+                              <div className="star">
                                 <img
                                   src="assets/images/star-on.png"
                                   alt="1"
@@ -539,11 +539,11 @@ const OurTravel = () => {
                               </div>
                             </div>
 
-                            <span class="review">
+                            <span className="review">
                               <a href="#">24 Reviews</a>
                             </span>
 
-                            <span class="go-detail">
+                            <span className="go-detail">
                               <a href="#">More</a>
                             </span>
                           </div>
@@ -551,14 +551,14 @@ const OurTravel = () => {
                       </div>
                     </div>
 
-                    <div class="part">
-                      <h3 class="list-heading">Hotel List</h3>
+                    <div className="part">
+                      <h3 className="list-heading">Hotel List</h3>
 
-                      <div class="hotel-lists">
+                      <div className="hotel-lists">
                         <ul>
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Diamond Hotel"
                             >
@@ -567,33 +567,33 @@ const OurTravel = () => {
                                 alt="Diamond Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Diamond Hotel">
                                   Diamond Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $150
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Hotel Name Here"
                             >
@@ -602,33 +602,33 @@ const OurTravel = () => {
                                 alt="Hotel Name Here"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Hotel Name Here">
                                   Hotel Name Here
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $199
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="AdelFox Hotel"
                             >
@@ -637,33 +637,33 @@ const OurTravel = () => {
                                 alt="AdelFox Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="AdelFox Hotel">
                                   AdelFox Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $100
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
                         </ul>
 
-                        <div class="load-more-hotel">
-                          <a href="#" class="button wide-fat">
+                        <div className="load-more-hotel">
+                          <a href="#" className="button wide-fat">
                             Load More Hotel
                           </a>
                         </div>
@@ -672,22 +672,22 @@ const OurTravel = () => {
                   </div>
                 </div>
 
-                <div class="col-md-6 col-sm-12 col-xs-12 tour-category-item">
-                  <div class="inner">
-                    <div class="part">
-                      <h3 class="category-heading">Europe Tours</h3>
+                <div className="col-md-6 col-sm-12 col-xs-12 tour-category-item">
+                  <div className="inner">
+                    <div className="part">
+                      <h3 className="category-heading">Europe Tours</h3>
 
-                      <div class="featured-tour">
+                      <div className="featured-tour">
                         <a href="#" title="Siam Paragon, Bangkok">
                           <img
                             src="assets/images/content/featured-tour-4.png"
                             alt="Siam Paragon, Bangkok"
-                            class="responsive-image"
+                            className="responsive-image"
                           />
                         </a>
 
-                        <div class="entry">
-                          <article class="entry-content">
+                        <div className="entry">
+                          <article className="entry-content">
                             <h1>
                               <a href="#" title="Siam Paragon, Bangkok">
                                 Siam Paragon, Bangkok
@@ -702,9 +702,9 @@ const OurTravel = () => {
                             </p>
                           </article>
 
-                          <div class="entry-meta">
-                            <div class="star-holder">
-                              <div class="star">
+                          <div className="entry-meta">
+                            <div className="star-holder">
+                              <div className="star">
                                 <img
                                   src="assets/images/star-on.png"
                                   alt="1"
@@ -734,11 +734,11 @@ const OurTravel = () => {
                               </div>
                             </div>
 
-                            <span class="review">
+                            <span className="review">
                               <a href="#">24 Reviews</a>
                             </span>
 
-                            <span class="go-detail">
+                            <span className="go-detail">
                               <a href="#">More</a>
                             </span>
                           </div>
@@ -746,14 +746,14 @@ const OurTravel = () => {
                       </div>
                     </div>
 
-                    <div class="part">
-                      <h3 class="list-heading">Hotel List</h3>
+                    <div className="part">
+                      <h3 className="list-heading">Hotel List</h3>
 
-                      <div class="hotel-lists">
+                      <div className="hotel-lists">
                         <ul>
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Diamond Hotel"
                             >
@@ -762,33 +762,33 @@ const OurTravel = () => {
                                 alt="Diamond Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Diamond Hotel">
                                   Diamond Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $150
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Hotel Name Here"
                             >
@@ -797,33 +797,33 @@ const OurTravel = () => {
                                 alt="Hotel Name Here"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Hotel Name Here">
                                   Hotel Name Here
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $199
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="AdelFox Hotel"
                             >
@@ -832,33 +832,33 @@ const OurTravel = () => {
                                 alt="AdelFox Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="AdelFox Hotel">
                                   AdelFox Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $100
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
                         </ul>
 
-                        <div class="load-more-hotel">
-                          <a href="#" class="button wide-fat">
+                        <div className="load-more-hotel">
+                          <a href="#" className="button wide-fat">
                             Load More Hotel
                           </a>
                         </div>
@@ -874,22 +874,22 @@ const OurTravel = () => {
                     : "tour-items"
                 }
               >
-                <div class="col-md-6 col-sm-12 col-xs-12 tour-category-item">
-                  <div class="inner">
-                    <div class="part">
-                      <h3 class="category-heading">Asia Tours</h3>
+                <div className="col-md-6 col-sm-12 col-xs-12 tour-category-item">
+                  <div className="inner">
+                    <div className="part">
+                      <h3 className="category-heading">Asia Tours</h3>
 
-                      <div class="featured-tour">
+                      <div className="featured-tour">
                         <a href="#" title="Siam Paragon, Bangkok">
                           <img
                             src="assets/images/content/featured-tour-1.png"
                             alt="Siam Paragon, Bangkok"
-                            class="responsive-image"
+                            className="responsive-image"
                           />
                         </a>
 
-                        <div class="entry">
-                          <article class="entry-content">
+                        <div className="entry">
+                          <article className="entry-content">
                             <h1>
                               <a href="#" title="Siam Paragon, Bangkok">
                                 Siam Paragon, Bangkok
@@ -904,9 +904,9 @@ const OurTravel = () => {
                             </p>
                           </article>
 
-                          <div class="entry-meta">
-                            <div class="star-holder">
-                              <div class="star">
+                          <div className="entry-meta">
+                            <div className="star-holder">
+                              <div className="star">
                                 <img
                                   src="assets/images/star-on.png"
                                   alt="1"
@@ -936,11 +936,11 @@ const OurTravel = () => {
                               </div>
                             </div>
 
-                            <span class="review">
+                            <span className="review">
                               <a href="#">24 Reviews</a>
                             </span>
 
-                            <span class="go-detail">
+                            <span className="go-detail">
                               <a href="#">More</a>
                             </span>
                           </div>
@@ -948,14 +948,14 @@ const OurTravel = () => {
                       </div>
                     </div>
 
-                    <div class="part">
-                      <h3 class="list-heading">Hotel List</h3>
+                    <div className="part">
+                      <h3 className="list-heading">Hotel List</h3>
 
-                      <div class="hotel-lists">
+                      <div className="hotel-lists">
                         <ul>
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Diamond Hotel"
                             >
@@ -964,33 +964,33 @@ const OurTravel = () => {
                                 alt="Diamond Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Diamond Hotel">
                                   Diamond Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $150
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Hotel Name Here"
                             >
@@ -999,33 +999,33 @@ const OurTravel = () => {
                                 alt="Hotel Name Here"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Hotel Name Here">
                                   Hotel Name Here
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $199
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="AdelFox Hotel"
                             >
@@ -1034,33 +1034,33 @@ const OurTravel = () => {
                                 alt="AdelFox Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="AdelFox Hotel">
                                   AdelFox Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $100
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
                         </ul>
 
-                        <div class="load-more-hotel">
-                          <a href="#" class="button wide-fat">
+                        <div className="load-more-hotel">
+                          <a href="#" className="button wide-fat">
                             Load More Hotel
                           </a>
                         </div>
@@ -1069,22 +1069,22 @@ const OurTravel = () => {
                   </div>
                 </div>
 
-                <div class=" col-md-6 col-sm-12 col-xs-12 tour-category-item">
-                  <div class="inner">
-                    <div class="part">
-                      <h3 class="category-heading">Asia Tours</h3>
+                <div className=" col-md-6 col-sm-12 col-xs-12 tour-category-item">
+                  <div className="inner">
+                    <div className="part">
+                      <h3 className="category-heading">Asia Tours</h3>
 
-                      <div class="featured-tour">
+                      <div className="featured-tour">
                         <a href="#" title="Siam Paragon, Bangkok">
                           <img
                             src="assets/images/content/featured-tour-2.png"
                             alt="Siam Paragon, Bangkok"
-                            class="responsive-image"
+                            className="responsive-image"
                           />
                         </a>
 
-                        <div class="entry">
-                          <article class="entry-content">
+                        <div className="entry">
+                          <article className="entry-content">
                             <h1>
                               <a href="#" title="Siam Paragon, Bangkok">
                                 Siam Paragon, Bangkok
@@ -1099,9 +1099,9 @@ const OurTravel = () => {
                             </p>
                           </article>
 
-                          <div class="entry-meta">
-                            <div class="star-holder">
-                              <div class="star">
+                          <div className="entry-meta">
+                            <div className="star-holder">
+                              <div className="star">
                                 <img
                                   src="assets/images/star-on.png"
                                   alt="1"
@@ -1131,11 +1131,11 @@ const OurTravel = () => {
                               </div>
                             </div>
 
-                            <span class="review">
+                            <span className="review">
                               <a href="#">24 Reviews</a>
                             </span>
 
-                            <span class="go-detail">
+                            <span className="go-detail">
                               <a href="#">More</a>
                             </span>
                           </div>
@@ -1143,14 +1143,14 @@ const OurTravel = () => {
                       </div>
                     </div>
 
-                    <div class="part">
-                      <h3 class="list-heading">Hotel List</h3>
+                    <div className="part">
+                      <h3 className="list-heading">Hotel List</h3>
 
-                      <div class="hotel-lists">
+                      <div className="hotel-lists">
                         <ul>
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Diamond Hotel"
                             >
@@ -1159,33 +1159,33 @@ const OurTravel = () => {
                                 alt="Diamond Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Diamond Hotel">
                                   Diamond Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $150
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Hotel Name Here"
                             >
@@ -1194,33 +1194,33 @@ const OurTravel = () => {
                                 alt="Hotel Name Here"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Hotel Name Here">
                                   Hotel Name Here
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $199
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="AdelFox Hotel"
                             >
@@ -1229,33 +1229,33 @@ const OurTravel = () => {
                                 alt="AdelFox Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="AdelFox Hotel">
                                   AdelFox Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $100
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
                         </ul>
 
-                        <div class="load-more-hotel">
-                          <a href="#" class="button wide-fat">
+                        <div className="load-more-hotel">
+                          <a href="#" className="button wide-fat">
                             Load More Hotel
                           </a>
                         </div>
@@ -1271,22 +1271,22 @@ const OurTravel = () => {
                     : "tour-items"
                 }
               >
-                <div class=" col-md-6 col-sm-12 col-xs-12 tour-category-item">
-                  <div class="inner">
-                    <div class="part">
-                      <h3 class="category-heading">Oceania Tours</h3>
+                <div className=" col-md-6 col-sm-12 col-xs-12 tour-category-item">
+                  <div className="inner">
+                    <div className="part">
+                      <h3 className="category-heading">Oceania Tours</h3>
 
-                      <div class="featured-tour">
+                      <div className="featured-tour">
                         <a href="#" title="Siam Paragon, Bangkok">
                           <img
                             src="assets/images/content/featured-tour-3.png"
                             alt="Siam Paragon, Bangkok"
-                            class="responsive-image"
+                            className="responsive-image"
                           />
                         </a>
 
-                        <div class="entry">
-                          <article class="entry-content">
+                        <div className="entry">
+                          <article className="entry-content">
                             <h1>
                               <a href="#" title="Siam Paragon, Bangkok">
                                 Siam Paragon, Bangkok
@@ -1301,9 +1301,9 @@ const OurTravel = () => {
                             </p>
                           </article>
 
-                          <div class="entry-meta">
-                            <div class="star-holder">
-                              <div class="star">
+                          <div className="entry-meta">
+                            <div className="star-holder">
+                              <div className="star">
                                 <img
                                   src="assets/images/star-on.png"
                                   alt="1"
@@ -1333,11 +1333,11 @@ const OurTravel = () => {
                               </div>
                             </div>
 
-                            <span class="review">
+                            <span className="review">
                               <a href="#">24 Reviews</a>
                             </span>
 
-                            <span class="go-detail">
+                            <span className="go-detail">
                               <a href="#">More</a>
                             </span>
                           </div>
@@ -1345,14 +1345,14 @@ const OurTravel = () => {
                       </div>
                     </div>
 
-                    <div class="part">
-                      <h3 class="list-heading">Hotel List</h3>
+                    <div className="part">
+                      <h3 className="list-heading">Hotel List</h3>
 
-                      <div class="hotel-lists">
+                      <div className="hotel-lists">
                         <ul>
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Diamond Hotel"
                             >
@@ -1361,33 +1361,33 @@ const OurTravel = () => {
                                 alt="Diamond Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Diamond Hotel">
                                   Diamond Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $150
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Hotel Name Here"
                             >
@@ -1396,33 +1396,33 @@ const OurTravel = () => {
                                 alt="Hotel Name Here"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Hotel Name Here">
                                   Hotel Name Here
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $199
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="AdelFox Hotel"
                             >
@@ -1431,33 +1431,33 @@ const OurTravel = () => {
                                 alt="AdelFox Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="AdelFox Hotel">
                                   AdelFox Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $100
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
                         </ul>
 
-                        <div class="load-more-hotel">
-                          <a href="#" class="button wide-fat">
+                        <div className="load-more-hotel">
+                          <a href="#" className="button wide-fat">
                             Load More Hotel
                           </a>
                         </div>
@@ -1473,22 +1473,22 @@ const OurTravel = () => {
                     : "tour-items"
                 }
               >
-                <div class="col-md-6 col-sm-12 col-xs-12 tour-category-item">
-                  <div class="inner">
-                    <div class="part">
-                      <h3 class="category-heading">Europe Tours</h3>
+                <div className="col-md-6 col-sm-12 col-xs-12 tour-category-item">
+                  <div className="inner">
+                    <div className="part">
+                      <h3 className="category-heading">Europe Tours</h3>
 
-                      <div class="featured-tour">
+                      <div className="featured-tour">
                         <a href="#" title="Siam Paragon, Bangkok">
                           <img
                             src="assets/images/content/featured-tour-4.png"
                             alt="Siam Paragon, Bangkok"
-                            class="responsive-image"
+                            className="responsive-image"
                           />
                         </a>
 
-                        <div class="entry">
-                          <article class="entry-content">
+                        <div className="entry">
+                          <article className="entry-content">
                             <h1>
                               <a href="#" title="Siam Paragon, Bangkok">
                                 Siam Paragon, Bangkok
@@ -1503,9 +1503,9 @@ const OurTravel = () => {
                             </p>
                           </article>
 
-                          <div class="entry-meta">
-                            <div class="star-holder">
-                              <div class="star">
+                          <div className="entry-meta">
+                            <div className="star-holder">
+                              <div className="star">
                                 <img
                                   src="assets/images/star-on.png"
                                   alt="1"
@@ -1535,11 +1535,11 @@ const OurTravel = () => {
                               </div>
                             </div>
 
-                            <span class="review">
+                            <span className="review">
                               <a href="#">24 Reviews</a>
                             </span>
 
-                            <span class="go-detail">
+                            <span className="go-detail">
                               <a href="#">More</a>
                             </span>
                           </div>
@@ -1547,14 +1547,14 @@ const OurTravel = () => {
                       </div>
                     </div>
 
-                    <div class="part">
-                      <h3 class="list-heading">Hotel List</h3>
+                    <div className="part">
+                      <h3 className="list-heading">Hotel List</h3>
 
-                      <div class="hotel-lists">
+                      <div className="hotel-lists">
                         <ul>
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Diamond Hotel"
                             >
@@ -1563,33 +1563,33 @@ const OurTravel = () => {
                                 alt="Diamond Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Diamond Hotel">
                                   Diamond Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $150
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="Hotel Name Here"
                             >
@@ -1598,33 +1598,33 @@ const OurTravel = () => {
                                 alt="Hotel Name Here"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="Hotel Name Here">
                                   Hotel Name Here
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $199
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
 
-                          <li class="hotel-list-item">
+                          <li className="hotel-list-item">
                             <a
-                              class="thumbnailz mini"
+                              className="thumbnailz mini"
                               href="#"
                               title="AdelFox Hotel"
                             >
@@ -1633,33 +1633,33 @@ const OurTravel = () => {
                                 alt="AdelFox Hotel"
                               />
 
-                              <span class="overlay"></span>
+                              <span className="overlay"></span>
                             </a>
 
-                            <article class="entry-content">
+                            <article className="entry-content">
                               <h3>
                                 <a href="#" title="AdelFox Hotel">
                                   AdelFox Hotel
                                 </a>
                               </h3>
 
-                              <span class="price">
-                                <span class="higlight emphasize value">
+                              <span className="price">
+                                <span className="higlight emphasize value">
                                   $100
                                 </span>
                                 /Night
                               </span>
                               <br />
 
-                              <a href="#" class="button mini">
+                              <a href="#" className="button mini">
                                 Book
                               </a>
                             </article>
                           </li>
                         </ul>
 
-                        <div class="load-more-hotel">
-                          <a href="#" class="button wide-fat">
+                        <div className="load-more-hotel">
+                          <a href="#" className="button wide-fat">
                             Load More Hotel
                           </a>
                         </div>
@@ -1672,37 +1672,37 @@ const OurTravel = () => {
           </div>
         </div>
       </section>
-      {/* class="section wide-fat" */}
+      {/* className="section wide-fat" */}
       <section
         id="testimonials"
         className={
           activeTravel === 3 ? "tour-items active-tour-item " : "tour-items"
         }
       >
-        <div class="container">
-          <article id="post-44" class="testimonials section-intro">
-            <h1 class="page-title">What Other People Say About Us</h1>
+        <div className="container">
+          <article id="post-44" className="testimonials section-intro">
+            <h1 className="page-title">What Other People Say About Us</h1>
           </article>
         </div>
 
-        <div id="sliding-testimony" class="flexslider">
-          <ul class="slides">
-            <li class="post">
-              <div class="container">
-                <div class="entry-content">
-                  <h2 class="testimony-author">John Doe</h2>
+        <div id="sliding-testimony" className="flexslider">
+          <ul className="slides">
+            <li className="post">
+              <div className="container">
+                <div className="entry-content">
+                  <h2 className="testimony-author">John Doe</h2>
 
-                  <div class="star-ratings">
+                  <div className="star-ratings">
                     <span>
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
 
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
 
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
 
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
 
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
                     </span>
                   </div>
 
@@ -1716,50 +1716,52 @@ const OurTravel = () => {
                     bibendum ullamcorper.
                   </p>
 
-                  <h3 class="impressive-figures-heading">
+                  <h3 className="impressive-figures-heading">
                     These Impressive Figures
                   </h3>
 
-                  <div class="criteria">
-                    <div class="criteria-item">
-                      <div class="circle">
-                        <i class="icon_map_alt"></i>
+                  <div className="criteria">
+                    <div className="criteria-item">
+                      <div className="circle">
+                        <i className="icon_map_alt"></i>
                       </div>
 
-                      <div class="stats">
-                        <span class="number">2.36545</span> <span>Tours</span>
+                      <div className="stats">
+                        <span className="number">2.36545</span>{" "}
+                        <span>Tours</span>
                       </div>
                     </div>
 
-                    <div class="criteria-item">
-                      <div class="circle">
-                        <i class="icon_group"></i>
+                    <div className="criteria-item">
+                      <div className="circle">
+                        <i className="icon_group"></i>
                       </div>
 
-                      <div class="stats">
-                        <span class="number">2.36545</span>{" "}
+                      <div className="stats">
+                        <span className="number">2.36545</span>{" "}
                         <span>Tourists</span>
                       </div>
                     </div>
 
-                    <div class="criteria-item">
-                      <div class="circle">
-                        <i class="icon_pin"></i>
+                    <div className="criteria-item">
+                      <div className="circle">
+                        <i className="icon_pin"></i>
                       </div>
 
-                      <div class="stats">
-                        <span class="number">2.36545</span>{" "}
+                      <div className="stats">
+                        <span className="number">2.36545</span>{" "}
                         <span>Destinations</span>
                       </div>
                     </div>
 
-                    <div class="criteria-item">
-                      <div class="circle">
-                        <i class="icon_building_alt"></i>
+                    <div className="criteria-item">
+                      <div className="circle">
+                        <i className="icon_building_alt"></i>
                       </div>
 
-                      <div class="stats">
-                        <span class="number">2.36545</span> <span>Hotels</span>
+                      <div className="stats">
+                        <span className="number">2.36545</span>{" "}
+                        <span>Hotels</span>
                       </div>
                     </div>
                   </div>
@@ -1775,30 +1777,30 @@ const OurTravel = () => {
           activeTravel === 6 ? "tour-items active-tour-item " : "tour-items"
         }
       >
-        <div class="container">
-          <article id="post-44" class="testimonials section-intro">
-            <h1 class="page-title">What Other People Say About Us</h1>
+        <div className="container">
+          <article id="post-44" className="testimonials section-intro">
+            <h1 className="page-title">What Other People Say About Us</h1>
           </article>
         </div>
 
-        <div id="sliding-testimony" class="flexslider">
-          <ul class="slides">
-            <li class="post">
-              <div class="container">
-                <div class="entry-content">
-                  <h2 class="testimony-author">John Doe</h2>
+        <div id="sliding-testimony" className="flexslider">
+          <ul className="slides">
+            <li className="post">
+              <div className="container">
+                <div className="entry-content">
+                  <h2 className="testimony-author">John Doe</h2>
 
-                  <div class="star-ratings">
+                  <div className="star-ratings">
                     <span>
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
 
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
 
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
 
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
 
-                      <i class="icon_star"></i>
+                      <i className="icon_star"></i>
                     </span>
                   </div>
 
@@ -1812,50 +1814,52 @@ const OurTravel = () => {
                     bibendum ullamcorper.
                   </p>
 
-                  <h3 class="impressive-figures-heading">
+                  <h3 className="impressive-figures-heading">
                     These Impressive Figures
                   </h3>
 
-                  <div class="criteria">
-                    <div class="criteria-item">
-                      <div class="circle">
-                        <i class="icon_map_alt"></i>
+                  <div className="criteria">
+                    <div className="criteria-item">
+                      <div className="circle">
+                        <i className="icon_map_alt"></i>
                       </div>
 
-                      <div class="stats">
-                        <span class="number">2.36545</span> <span>Tours</span>
+                      <div className="stats">
+                        <span className="number">2.36545</span>{" "}
+                        <span>Tours</span>
                       </div>
                     </div>
 
-                    <div class="criteria-item">
-                      <div class="circle">
-                        <i class="icon_group"></i>
+                    <div className="criteria-item">
+                      <div className="circle">
+                        <i className="icon_group"></i>
                       </div>
 
-                      <div class="stats">
-                        <span class="number">2.36545</span>{" "}
+                      <div className="stats">
+                        <span className="number">2.36545</span>{" "}
                         <span>Tourists</span>
                       </div>
                     </div>
 
-                    <div class="criteria-item">
-                      <div class="circle">
-                        <i class="icon_pin"></i>
+                    <div className="criteria-item">
+                      <div className="circle">
+                        <i className="icon_pin"></i>
                       </div>
 
-                      <div class="stats">
-                        <span class="number">2.36545</span>{" "}
+                      <div className="stats">
+                        <span className="number">2.36545</span>{" "}
                         <span>Destinations</span>
                       </div>
                     </div>
 
-                    <div class="criteria-item">
-                      <div class="circle">
-                        <i class="icon_building_alt"></i>
+                    <div className="criteria-item">
+                      <div className="circle">
+                        <i className="icon_building_alt"></i>
                       </div>
 
-                      <div class="stats">
-                        <span class="number">2.36545</span> <span>Hotels</span>
+                      <div className="stats">
+                        <span className="number">2.36545</span>{" "}
+                        <span>Hotels</span>
                       </div>
                     </div>
                   </div>

@@ -3,105 +3,105 @@ import React from "react";
 const HeroFrom = () => {
   return (
     <>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-5">
             <div
               id="search-filter-in"
-              class="full-width position-absolute sm-position-relative bottom-80px sm-bottom-auto hero-form"
+              className="full-width position-absolute sm-position-relative bottom-80px sm-bottom-auto hero-form"
             >
-              <div class="search-filter row no-gutters box-shadow sm-tb-40px">
-                <div class="filter-tabs  col-lg-5 background-second-color">
+              <div className="search-filter row no-gutters box-shadow sm-tb-40px">
+                <div className="filter-tabs  col-lg-5 background-second-color">
                   <img
-                    class="hidden-xs"
+                    className="hidden-xs"
                     src="http://placehold.it/200x130"
                     alt=""
                   />
-                  <ul class="nav nav-tabs flex-column" role="tablist">
-                    <li class="nav-item">
+                  <ul className="nav nav-tabs flex-column" role="tablist">
+                    <li className="nav-item">
                       <a
-                        class="nav-link active"
+                        className="nav-link active"
                         data-toggle="tab"
                         href="#home"
                         role="tab"
                       >
-                        <i class="fa fa-hotel"></i> Hotels
+                        <i className="fa fa-hotel"></i> Hotels
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <a
-                        class="nav-link"
+                        className="nav-link"
                         data-toggle="tab"
                         href="#profile"
                         role="tab"
                       >
-                        <i class="fa fa-plane"></i> Flights
+                        <i className="fa fa-plane"></i> Flights
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <a
-                        class="nav-link"
+                        className="nav-link"
                         data-toggle="tab"
                         href="#messages"
                         role="tab"
                       >
-                        <i class="fa fa-cab"></i> Cars
+                        <i className="fa fa-cab"></i> Cars
                       </a>
                     </li>
                   </ul>
-                  <div class="clearfix"></div>
+                  <div className="clearfix"></div>
                 </div>
-                <div class="filter-output booking-form-box col-lg-7">
+                <div className="filter-output booking-form-box col-lg-7">
                   {/* <!-- Tab panes --> */}
-                  <div class="tab-content  padding-30px background-white">
-                    <div class="tab-pane active" id="home" role="tabpanel">
-                      <div class="form-group margin-bottom-5px">
+                  <div className="tab-content  padding-30px background-white">
+                    <div className="tab-pane active" id="home" role="tabpanel">
+                      <div className="form-group margin-bottom-5px">
                         <label>Destination</label>
-                        <div class="destination">
+                        <div className="destination">
                           <input
                             type="text"
-                            class="input-text full-width"
+                            className="input-text full-width"
                             placeholder="Enter Destination"
                           />
                         </div>
                       </div>
-                      <div class="form-group margin-bottom-5px">
+                      <div className="form-group margin-bottom-5px">
                         <label>Check Out</label>
-                        <div class="date-input">
+                        <div className="date-input">
                           <input
                             type="text"
-                            class="input-text datepicker full-width"
+                            className="input-text datepicker full-width"
                             placeholder="15 / 5 / 2017"
                           />
                         </div>
                       </div>
-                      <div class="form-group margin-bottom-5px">
+                      <div className="form-group margin-bottom-5px">
                         <label>Check Out</label>
-                        <div class="date-input">
+                        <div className="date-input">
                           <input
                             type="text"
-                            class="input-text datepicker full-width"
+                            className="input-text datepicker full-width"
                             placeholder="15 / 5 / 2017"
                           />
                         </div>
                       </div>
-                      <div class="row margin-bottom-10px">
-                        <div class="form-group col">
+                      <div className="row margin-bottom-10px">
+                        <div className="form-group col">
                           <label>Rooms</label>
-                          <div class="rooms">
+                          <div className="rooms">
                             <input
                               type="text"
-                              class="input-text full-width"
+                              className="input-text full-width"
                               placeholder="1"
                             />
                           </div>
                         </div>
-                        <div class="form-group col">
+                        <div className="form-group col">
                           <label>Children</label>
-                          <div class="children">
+                          <div className="children">
                             <input
                               type="text"
-                              class="input-text full-width"
+                              className="input-text full-width"
                               placeholder="0"
                             />
                           </div>
@@ -109,116 +109,116 @@ const HeroFrom = () => {
                       </div>
                       <a
                         href="#"
-                        class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
+                        className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
                       >
-                        <i class="fa fa-search"></i> Hotel Search
+                        <i className="fa fa-search"></i> Hotel Search
                       </a>
                     </div>
-                    <div class="tab-pane" id="profile" role="tabpanel">
+                    <div className="tab-pane" id="profile" role="tabpanel">
                       {/* <!-- ====== Flights ====== --> */}
-                      <div class="form-group margin-bottom-5px">
+                      <div className="form-group margin-bottom-5px">
                         <label>Flying from:</label>
-                        <div class="destination">
+                        <div className="destination">
                           <input
                             type="text"
-                            class="input-text full-width"
+                            className="input-text full-width"
                             placeholder="Flying from"
                           />
                         </div>
                       </div>
-                      <div class="form-group margin-bottom-5px">
+                      <div className="form-group margin-bottom-5px">
                         <label>Flying to:</label>
-                        <div class="destination">
+                        <div className="destination">
                           <input
                             type="text"
-                            class="input-text full-width"
+                            className="input-text full-width"
                             placeholder="Flying to"
                           />
                         </div>
                       </div>
-                      <div class="form-group margin-bottom-5px">
+                      <div className="form-group margin-bottom-5px">
                         <label>Departing:</label>
-                        <div class="date-input">
+                        <div className="date-input">
                           <input
                             type="text"
-                            class="input-text datepicker full-width"
+                            className="input-text datepicker full-width"
                             placeholder="15 / 5 / 2017"
                           />
                         </div>
                       </div>
-                      <div class="form-group margin-bottom-25px">
+                      <div className="form-group margin-bottom-25px">
                         <label>Returning:</label>
-                        <div class="date-input">
+                        <div className="date-input">
                           <input
                             type="text"
-                            class="input-text datepicker full-width"
+                            className="input-text datepicker full-width"
                             placeholder="15 / 5 / 2017"
                           />
                         </div>
                       </div>
                       <a
                         href="#"
-                        class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
+                        className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
                       >
-                        <i class="fa fa-search"></i> Flights Search
+                        <i className="fa fa-search"></i> Flights Search
                       </a>
                       {/* <!-- ====== //  Flights ====== --> */}
                     </div>
-                    <div class="tab-pane" id="messages" role="tabpanel">
+                    <div className="tab-pane" id="messages" role="tabpanel">
                       {/* <!-- ====== Cars ====== --> */}
-                      <div class="form-group  margin-bottom-5px">
+                      <div className="form-group  margin-bottom-5px">
                         <label>Location:</label>
-                        <div class="destination">
+                        <div className="destination">
                           <input
                             type="text"
-                            class="input-text full-width"
+                            className="input-text full-width"
                             placeholder="Location"
                           />
                         </div>
                       </div>
-                      <div class="form-group  margin-bottom-5px">
+                      <div className="form-group  margin-bottom-5px">
                         <label>Type of car :</label>
-                        <div class="destination">
+                        <div className="destination">
                           <input
                             type="text"
-                            class="input-text full-width"
+                            className="input-text full-width"
                             placeholder="Type of car"
                           />
                         </div>
                       </div>
-                      <div class="form-group  margin-bottom-5px">
+                      <div className="form-group  margin-bottom-5px">
                         <label>Pick up Date:</label>
-                        <div class="date-input">
+                        <div className="date-input">
                           <input
                             type="text"
-                            class="input-text datepicker full-width"
+                            className="input-text datepicker full-width"
                             placeholder="15 / 5 / 2017"
                           />
                         </div>
                       </div>
-                      <div class="form-group margin-bottom-25px">
+                      <div className="form-group margin-bottom-25px">
                         <label>Drop off Date:</label>
-                        <div class="date-input">
+                        <div className="date-input">
                           <input
                             type="text"
-                            class="input-text datepicker full-width"
+                            className="input-text datepicker full-width"
                             placeholder="15 / 5 / 2017"
                           />
                         </div>
                       </div>
                       <a
                         href="#"
-                        class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
+                        className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
                       >
-                        <i class="fa fa-search"></i> Cars Search
+                        <i className="fa fa-search"></i> Cars Search
                       </a>
                       {/* <!-- ====== //  Cars ====== --> */}
                     </div>
                   </div>
                   {/* <!-- Tab panes --> */}
-                  <div class="clearfix"></div>
+                  <div className="clearfix"></div>
                 </div>
-                <div class="clearfix"></div>
+                <div className="clearfix"></div>
               </div>
             </div>
           </div>

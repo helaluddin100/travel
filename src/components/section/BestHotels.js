@@ -5,14 +5,14 @@ import "react-range-slider-input/dist/style.css";
 const BestHotels = () => {
   return (
     <>
-      <section id="hotels" class="section wide-fat">
-        <div class="container">
-          <article id="post-5" class="hotels section-intro">
-            <h1 class="page-title">
-              Best <span class="higlight">Hotels</span>
+      <section id="hotels" className="section wide-fat">
+        <div className="container">
+          <article id="post-5" className="hotels section-intro">
+            <h1 className="page-title">
+              Best <span className="higlight">Hotels</span>
             </h1>
 
-            <div class="entry-content">
+            <div className="entry-content">
               <p>
                 Integer sollicitudin ligula non enim sodales, non lacinia nunc
                 ornare. Sed commodo tempor dapibus.
@@ -25,21 +25,21 @@ const BestHotels = () => {
             </div>
           </article>
 
-          <div class="hotels-filter">
-            <div class="container">
-              <div class="search-heading col-md-3 col-sm-6">
+          <div className="hotels-filter">
+            <div className="container">
+              <div className="search-heading col-md-3 col-sm-6">
                 <h3>120 Hotels from $150</h3>
               </div>
 
-              <div class="vertical-hotel-filter col-md-9 col-sm-6">
-                <form class="hotels-filter-form" method="get">
+              <div className="vertical-hotel-filter col-md-9 col-sm-6">
+                <form className="hotels-filter-form" method="get">
                   <ul>
-                    <li class="short-by form-member">
+                    <li className="short-by form-member">
                       <span>Short by</span>
                     </li>
 
-                    <li class="form-member form-member1">
-                      <select class="chosen-select">
+                    <li className="form-member form-member1">
+                      <select className="chosen-select">
                         <option value="">Hotel Name 1</option>
 
                         <option value="">Hotel Name 2</option>
@@ -54,8 +54,8 @@ const BestHotels = () => {
                       </select>
                     </li>
 
-                    <li class="form-member form-member1">
-                      <select class="chosen-select">
+                    <li className="form-member form-member1">
+                      <select className="chosen-select">
                         <option value="">Price 1</option>
 
                         <option value="">Price 2</option>
@@ -70,8 +70,8 @@ const BestHotels = () => {
                       </select>
                     </li>
 
-                    <li class="form-member form-member1">
-                      <select class="chosen-select">
+                    <li className="form-member form-member1">
+                      <select className="chosen-select">
                         <option value="">Guest Rating 1</option>
 
                         <option value="">Guest Rating 2</option>
@@ -86,8 +86,8 @@ const BestHotels = () => {
                       </select>
                     </li>
 
-                    <li class="form-member form-member1">
-                      <select class="chosen-select">
+                    <li className="form-member form-member1">
+                      <select className="chosen-select">
                         <option value="">Reviews 1</option>
 
                         <option value="">Reviews 2</option>
@@ -102,11 +102,11 @@ const BestHotels = () => {
                       </select>
                     </li>
 
-                    <li class="most-popular form-member">
+                    <li className="most-popular form-member">
                       <span>Most Popular</span>
                     </li>
 
-                    <li class="filter-btn form-member">
+                    <li className="filter-btn form-member">
                       <input type="submit" value="Search" />
                     </li>
                   </ul>
@@ -115,51 +115,46 @@ const BestHotels = () => {
             </div>
           </div>
 
-          <div class="contents-wrapper">
-            <div class="row">
-              <div class="sidebar col-md-3 col-sm-6">
-                <div class="widget">
-                  <h3 class="widget-title">Hotel Search</h3>
+          <div className="contents-wrapper">
+            <div className="row">
+              <div className="sidebar col-md-3 col-sm-6">
+                <div className="widget">
+                  <h3 className="widget-title">Hotel Search</h3>
 
-                  <div class="location-search-widget">
-                    <form class="location-search" method="get">
-                      <div class="search-field">
-                        <div class="destination-field">
+                  <div className="location-search-widget">
+                    <form className="location-search" method="get">
+                      <div className="search-field">
+                        <div className="destination-field">
                           <input id="destinationfield" type="text" />
                         </div>
                       </div>
 
-                      <div class="search-field">
-                        <div class="col-field-left">
+                      <div className="search-field">
+                        <div className="col-field-left">
                           <label for="e">Check in date</label>
 
                           <br />
 
-                          <input
-                            id="e"
-               
-                            type="date"
-                            value="d MM yy"
-                          />
+                          <input id="e" type="date" value="d MM yy" />
                         </div>
 
-                        <div class="col-field-right">
+                        <div className="col-field-right">
                           <label for="check-out-date2">Check out date</label>
 
                           <br />
 
                           <input
                             id="check-out-date2"
-                            class="traveline_date_input"
+                            className="traveline_date_input"
                             type="date"
                             value="d MM yy"
                           />
                         </div>
                       </div>
 
-                      <div class="search-field">
-                        <div class="col-field-left">
-                          <div class="hotel-field">
+                      <div className="search-field">
+                        <div className="col-field-left">
+                          <div className="hotel-field">
                             <label for="hotel">Hotel</label>
 
                             <br />
@@ -168,37 +163,41 @@ const BestHotels = () => {
                           </div>
                         </div>
 
-                        <div class="col-field-right">
-                          <div class="col-field-left">
-                            <div class="adult-left">
+                        <div className="col-field-right">
+                          <div className="col-field-left">
+                            <div className="adult-left">
                               <label for="adult">Adult</label>
 
                               <br />
 
-                              <div class="quantity">
-                                <input id="adult" class="qty" type="text" />
+                              <div className="quantity">
+                                <input id="adult" className="qty" type="text" />
                               </div>
                             </div>
                           </div>
 
-                          <div class="col-field-right">
-                            <div class="children-field">
+                          <div className="col-field-right">
+                            <div className="children-field">
                               <label for="children">Children</label>
 
                               <br />
 
-                              <div class="quantity">
-                                <input id="children" class="qty" type="text" />
+                              <div className="quantity">
+                                <input
+                                  id="children"
+                                  className="qty"
+                                  type="text"
+                                />
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div class="search-field">
+                      <div className="search-field">
                         <input
                           type="submit"
-                          class="button wide-fat"
+                          className="button wide-fat"
                           value="Search"
                         />
                       </div>
@@ -206,11 +205,11 @@ const BestHotels = () => {
                   </div>
                 </div>
 
-                <div class="widget rating-filter-widget">
-                  <h3 class="widget-title">Star Rating</h3>
+                <div className="widget rating-filter-widget">
+                  <h3 className="widget-title">Star Rating</h3>
 
                   <form>
-                    <ul class="check-box-items">
+                    <ul className="check-box-items">
                       <li>
                         <input type="checkbox" />
                         <label>
@@ -269,8 +268,8 @@ const BestHotels = () => {
                   </form>
                 </div>
 
-                <div class="widget">
-                  <h3 class="widget-title">Price Filter</h3>
+                <div className="widget">
+                  <h3 className="widget-title">Price Filter</h3>
                   {/* <PriceRangeSlider/> */}
                   <div className="price-range-item">
                     <p>$0</p>
@@ -279,8 +278,8 @@ const BestHotels = () => {
                   <RangeSlider />
                 </div>
 
-                <div class="widget hotel-type-filter-widget">
-                  <h3 class="widget-title">Type</h3>
+                <div className="widget hotel-type-filter-widget">
+                  <h3 className="widget-title">Type</h3>
 
                   <form>
                     <ul className="filter-input">
@@ -318,30 +317,32 @@ const BestHotels = () => {
                 </div>
               </div>
 
-              <div class="contents grid-contents col-md-9 col-sm-6">
-                <div class="row">
-                  <div class="content col-md-4 col-sm-12">
-                    <div class="inner">
-                      <a class="thumbnailz" href="#">
+              <div className="contents grid-contents col-md-9 col-sm-6">
+                <div className="row">
+                  <div className="content col-md-4 col-sm-12">
+                    <div className="inner">
+                      <a className="thumbnailz" href="#">
                         <img
                           src="assets/images/content/post-thumb-1.png"
                           alt="Your Hotel Title Here"
-                          class="responsive-image"
+                          className="responsive-image"
                         />
 
-                        <span class="overlay">Details</span>
+                        <span className="overlay">Details</span>
                       </a>
 
-                      <div class="entry">
-                        <article class="entry-content">
-                          <h2 class="post-title">
+                      <div className="entry">
+                        <article className="entry-content">
+                          <h2 className="post-title">
                             <a href="#" title="Your Hotel Title Here">
                               Your Hotel Title Here
                             </a>
                           </h2>
 
-                          <span class="price">
-                            <span class="higlight emphasize value">$150</span>{" "}
+                          <span className="price">
+                            <span className="higlight emphasize value">
+                              $150
+                            </span>{" "}
                             /Night
                           </span>
                           <br />
@@ -354,43 +355,43 @@ const BestHotels = () => {
                           </p>
                         </article>
 
-                        <div class="entry-meta">
-                        <div class="star-holder">
-                              <div class="star">
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="1"
-                                  title="bad"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="2"
-                                  title="poor"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="3"
-                                  title="regular"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="4"
-                                  title="good"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="5"
-                                  title="gorgeous"
-                                />
-                                <input type="hidden" name="score" value="3" />
-                              </div>
+                        <div className="entry-meta">
+                          <div className="star-holder">
+                            <div className="star">
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="1"
+                                title="bad"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="2"
+                                title="poor"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="3"
+                                title="regular"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="4"
+                                title="good"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="5"
+                                title="gorgeous"
+                              />
+                              <input type="hidden" name="score" value="3" />
                             </div>
+                          </div>
 
-                          <span class="review">
+                          <span className="review">
                             <a href="#">24 Reviews</a>
                           </span>
 
-                          <span class="go-detail">
+                          <span className="go-detail">
                             <a href="#">More</a>
                           </span>
                         </div>
@@ -398,28 +399,30 @@ const BestHotels = () => {
                     </div>
                   </div>
 
-                  <div class="content col-md-4 col-sm-12">
-                    <div class="inner">
-                      <a class="thumbnailz" href="#">
+                  <div className="content col-md-4 col-sm-12">
+                    <div className="inner">
+                      <a className="thumbnailz" href="#">
                         <img
                           src="assets/images/content/post-thumb-2.png"
                           alt="Your Hotel Title Here"
-                          class="responsive-image"
+                          className="responsive-image"
                         />
 
-                        <span class="overlay">Details</span>
+                        <span className="overlay">Details</span>
                       </a>
 
-                      <div class="entry">
-                        <article class="entry-content">
-                          <h2 class="post-title">
+                      <div className="entry">
+                        <article className="entry-content">
+                          <h2 className="post-title">
                             <a href="#" title="Your Hotel Title Here">
                               Your Hotel Title Here
                             </a>
                           </h2>
 
-                          <span class="price">
-                            <span class="higlight emphasize value">$150</span>{" "}
+                          <span className="price">
+                            <span className="higlight emphasize value">
+                              $150
+                            </span>{" "}
                             /Night
                           </span>
                           <br />
@@ -432,43 +435,43 @@ const BestHotels = () => {
                           </p>
                         </article>
 
-                        <div class="entry-meta">
-                        <div class="star-holder">
-                              <div class="star">
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="1"
-                                  title="bad"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="2"
-                                  title="poor"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="3"
-                                  title="regular"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="4"
-                                  title="good"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="5"
-                                  title="gorgeous"
-                                />
-                                <input type="hidden" name="score" value="3" />
-                              </div>
+                        <div className="entry-meta">
+                          <div className="star-holder">
+                            <div className="star">
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="1"
+                                title="bad"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="2"
+                                title="poor"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="3"
+                                title="regular"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="4"
+                                title="good"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="5"
+                                title="gorgeous"
+                              />
+                              <input type="hidden" name="score" value="3" />
                             </div>
+                          </div>
 
-                          <span class="review">
+                          <span className="review">
                             <a href="#">24 Reviews</a>
                           </span>
 
-                          <span class="go-detail">
+                          <span className="go-detail">
                             <a href="#">More</a>
                           </span>
                         </div>
@@ -476,28 +479,30 @@ const BestHotels = () => {
                     </div>
                   </div>
 
-                  <div class="content col-md-4 col-sm-12">
-                    <div class="inner">
-                      <a class="thumbnailz" href="#">
+                  <div className="content col-md-4 col-sm-12">
+                    <div className="inner">
+                      <a className="thumbnailz" href="#">
                         <img
                           src="assets/images/content/post-thumb-3.png"
                           alt="Your Hotel Title Here"
-                          class="responsive-image"
+                          className="responsive-image"
                         />
 
-                        <span class="overlay">Details</span>
+                        <span className="overlay">Details</span>
                       </a>
 
-                      <div class="entry">
-                        <article class="entry-content">
-                          <h2 class="post-title">
+                      <div className="entry">
+                        <article className="entry-content">
+                          <h2 className="post-title">
                             <a href="#" title="Your Hotel Title Here">
                               Your Hotel Title Here
                             </a>
                           </h2>
 
-                          <span class="price">
-                            <span class="higlight emphasize value">$150</span>{" "}
+                          <span className="price">
+                            <span className="higlight emphasize value">
+                              $150
+                            </span>{" "}
                             /Night
                           </span>
                           <br />
@@ -510,43 +515,43 @@ const BestHotels = () => {
                           </p>
                         </article>
 
-                        <div class="entry-meta">
-                        <div class="star-holder">
-                              <div class="star">
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="1"
-                                  title="bad"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="2"
-                                  title="poor"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="3"
-                                  title="regular"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="4"
-                                  title="good"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="5"
-                                  title="gorgeous"
-                                />
-                                <input type="hidden" name="score" value="3" />
-                              </div>
+                        <div className="entry-meta">
+                          <div className="star-holder">
+                            <div className="star">
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="1"
+                                title="bad"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="2"
+                                title="poor"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="3"
+                                title="regular"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="4"
+                                title="good"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="5"
+                                title="gorgeous"
+                              />
+                              <input type="hidden" name="score" value="3" />
                             </div>
+                          </div>
 
-                          <span class="review">
+                          <span className="review">
                             <a href="#">24 Reviews</a>
                           </span>
 
-                          <span class="go-detail">
+                          <span className="go-detail">
                             <a href="#">More</a>
                           </span>
                         </div>
@@ -554,28 +559,30 @@ const BestHotels = () => {
                     </div>
                   </div>
 
-                  <div class="content col-md-4 col-sm-12">
-                    <div class="inner">
-                      <a class="thumbnailz" href="#">
+                  <div className="content col-md-4 col-sm-12">
+                    <div className="inner">
+                      <a className="thumbnailz" href="#">
                         <img
                           src="assets/images/content/post-thumb-4.png"
                           alt="Your Hotel Title Here"
-                          class="responsive-image"
+                          className="responsive-image"
                         />
 
-                        <span class="overlay">Details</span>
+                        <span className="overlay">Details</span>
                       </a>
 
-                      <div class="entry">
-                        <article class="entry-content">
-                          <h2 class="post-title">
+                      <div className="entry">
+                        <article className="entry-content">
+                          <h2 className="post-title">
                             <a href="#" title="Your Hotel Title Here">
                               Your Hotel Title Here
                             </a>
                           </h2>
 
-                          <span class="price">
-                            <span class="higlight emphasize value">$150</span>{" "}
+                          <span className="price">
+                            <span className="higlight emphasize value">
+                              $150
+                            </span>{" "}
                             /Night
                           </span>
                           <br />
@@ -588,43 +595,43 @@ const BestHotels = () => {
                           </p>
                         </article>
 
-                        <div class="entry-meta">
-                        <div class="star-holder">
-                              <div class="star">
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="1"
-                                  title="bad"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="2"
-                                  title="poor"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="3"
-                                  title="regular"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="4"
-                                  title="good"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="5"
-                                  title="gorgeous"
-                                />
-                                <input type="hidden" name="score" value="3" />
-                              </div>
+                        <div className="entry-meta">
+                          <div className="star-holder">
+                            <div className="star">
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="1"
+                                title="bad"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="2"
+                                title="poor"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="3"
+                                title="regular"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="4"
+                                title="good"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="5"
+                                title="gorgeous"
+                              />
+                              <input type="hidden" name="score" value="3" />
                             </div>
+                          </div>
 
-                          <span class="review">
+                          <span className="review">
                             <a href="#">24 Reviews</a>
                           </span>
 
-                          <span class="go-detail">
+                          <span className="go-detail">
                             <a href="#">More</a>
                           </span>
                         </div>
@@ -632,28 +639,30 @@ const BestHotels = () => {
                     </div>
                   </div>
 
-                  <div class="content col-md-4 col-sm-12">
-                    <div class="inner">
-                      <a class="thumbnailz" href="#">
+                  <div className="content col-md-4 col-sm-12">
+                    <div className="inner">
+                      <a className="thumbnailz" href="#">
                         <img
                           src="assets/images/content/post-thumb-5.png"
                           alt="Your Hotel Title Here"
-                          class="responsive-image"
+                          className="responsive-image"
                         />
 
-                        <span class="overlay">Details</span>
+                        <span className="overlay">Details</span>
                       </a>
 
-                      <div class="entry">
-                        <article class="entry-content">
-                          <h2 class="post-title">
+                      <div className="entry">
+                        <article className="entry-content">
+                          <h2 className="post-title">
                             <a href="#" title="Your Hotel Title Here">
                               Your Hotel Title Here
                             </a>
                           </h2>
 
-                          <span class="price">
-                            <span class="higlight emphasize value">$150</span>{" "}
+                          <span className="price">
+                            <span className="higlight emphasize value">
+                              $150
+                            </span>{" "}
                             /Night
                           </span>
                           <br />
@@ -666,43 +675,43 @@ const BestHotels = () => {
                           </p>
                         </article>
 
-                        <div class="entry-meta">
-                        <div class="star-holder">
-                              <div class="star">
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="1"
-                                  title="bad"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="2"
-                                  title="poor"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="3"
-                                  title="regular"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="4"
-                                  title="good"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="5"
-                                  title="gorgeous"
-                                />
-                                <input type="hidden" name="score" value="3" />
-                              </div>
+                        <div className="entry-meta">
+                          <div className="star-holder">
+                            <div className="star">
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="1"
+                                title="bad"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="2"
+                                title="poor"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="3"
+                                title="regular"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="4"
+                                title="good"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="5"
+                                title="gorgeous"
+                              />
+                              <input type="hidden" name="score" value="3" />
                             </div>
+                          </div>
 
-                          <span class="review">
+                          <span className="review">
                             <a href="#">24 Reviews</a>
                           </span>
 
-                          <span class="go-detail">
+                          <span className="go-detail">
                             <a href="#">More</a>
                           </span>
                         </div>
@@ -710,28 +719,30 @@ const BestHotels = () => {
                     </div>
                   </div>
 
-                  <div class="content col-md-4 col-sm-12">
-                    <div class="inner">
-                      <a class="thumbnailz" href="#">
+                  <div className="content col-md-4 col-sm-12">
+                    <div className="inner">
+                      <a className="thumbnailz" href="#">
                         <img
                           src="assets/images/content/post-thumb-6.png"
                           alt="Your Hotel Title Here"
-                          class="responsive-image"
+                          className="responsive-image"
                         />
 
-                        <span class="overlay">Details</span>
+                        <span className="overlay">Details</span>
                       </a>
 
-                      <div class="entry">
-                        <article class="entry-content">
-                          <h2 class="post-title">
+                      <div className="entry">
+                        <article className="entry-content">
+                          <h2 className="post-title">
                             <a href="#" title="Your Hotel Title Here">
                               Your Hotel Title Here
                             </a>
                           </h2>
 
-                          <span class="price">
-                            <span class="higlight emphasize value">$150</span>{" "}
+                          <span className="price">
+                            <span className="higlight emphasize value">
+                              $150
+                            </span>{" "}
                             /Night
                           </span>
                           <br />
@@ -744,43 +755,43 @@ const BestHotels = () => {
                           </p>
                         </article>
 
-                        <div class="entry-meta">
-                        <div class="star-holder">
-                              <div class="star">
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="1"
-                                  title="bad"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="2"
-                                  title="poor"
-                                />
-                                <img
-                                  src="assets/images/star-on.png"
-                                  alt="3"
-                                  title="regular"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="4"
-                                  title="good"
-                                />
-                                <img
-                                  src="assets/images/star-off.png"
-                                  alt="5"
-                                  title="gorgeous"
-                                />
-                                <input type="hidden" name="score" value="3" />
-                              </div>
+                        <div className="entry-meta">
+                          <div className="star-holder">
+                            <div className="star">
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="1"
+                                title="bad"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="2"
+                                title="poor"
+                              />
+                              <img
+                                src="assets/images/star-on.png"
+                                alt="3"
+                                title="regular"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="4"
+                                title="good"
+                              />
+                              <img
+                                src="assets/images/star-off.png"
+                                alt="5"
+                                title="gorgeous"
+                              />
+                              <input type="hidden" name="score" value="3" />
                             </div>
+                          </div>
 
-                          <span class="review">
+                          <span className="review">
                             <a href="#">24 Reviews</a>
                           </span>
 
-                          <span class="go-detail">
+                          <span className="go-detail">
                             <a href="#">More</a>
                           </span>
                         </div>
@@ -789,10 +800,10 @@ const BestHotels = () => {
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-md-12 col-sm-12">
-                    <div class="load-more-posts">
-                      <a href="#" class="button wide-fat">
+                <div className="row">
+                  <div className="col-md-12 col-sm-12">
+                    <div className="load-more-posts">
+                      <a href="#" className="button wide-fat">
                         Load More Hotel
                       </a>
                     </div>
