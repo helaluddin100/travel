@@ -1,97 +1,202 @@
 body {
-    font-size: 14px !important;
-  }
-  ul {
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  a {
-    text-decoration: none !important;
-  }
-  .images-feed {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-  }
-  .images-feed li a img {
-    max-width: 100%;
-  }
-  .footer-menu-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
-  .margin-bottom-20px {
-    margin-bottom: 20px;
-  }
-  .padding-tb-100px {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .tour-items {
-    display: none;
-  }
-  .tour-items.active-tour-item {
-    display: block;
-  }
-  .responsive-image {
-    width: 100%;
-    height: auto;
-  }
-  .testimonials h1 {
-    text-align: center;
-    /* margin-bottom: 20px; */
-    padding-bottom: 20px;
-  }
-  .check-box-items li input {
-    width: 16px;
-    height: 16px;
-    margin-right: 15px;
-    margin-left: 0;
-  }
-  
-  .filter-input li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    /* justify-content: space-between; */
-  }
-  .filter-input li::before {
-    display: none !important;
-  }
-  .filter-input li::after {
-    display: none !important;
-  }
-  .filter-input input {
-    width: 16px;
-    height: 16px;
-  }
-  
-  .filter-input label {
-      margin: 0 !important;
-    }
-  
-    li.form-member.form-member1 .chosen-select {
-      height: 75%;
-      margin: 5px 0;
-      background-color: #fff;
-      border: none;
-      color: #95a8b4;
-      border-radius: 2px;
-  }
-  li.form-member.form-member1 .chosen-select option {
-      background-color: white;
-      color: black; 
-      padding: 5px 0;
-    }
-    
-    /* Style for the hover state of options */
-    li.form-member.form-member1 .chosen-selectoption:hover {
-      background-color: #e0e0e0 !important; /* Set the hover background color */
-      color: black; /* Set the hover text color */
-    }
-  .price-range-item{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
+  font-size: 14px !important;
+}
+ul {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+a {
+  text-decoration: none !important;
+}
+.images-feed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.images-feed li a img {
+  max-width: 100%;
+}
+.footer-menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.margin-bottom-20px {
+  margin-bottom: 20px;
+}
+.padding-tb-100px {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.tour-items {
+  display: none;
+}
+.tour-items.active-tour-item {
+  display: block;
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+.testimonials h1 {
+  text-align: center;
+  /* margin-bottom: 20px; */
+  padding-bottom: 20px;
+}
+.check-box-items li input {
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+  margin-left: 0;
+}
+
+.filter-input li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+.filter-input li::before {
+  display: none !important;
+}
+.filter-input li::after {
+  display: none !important;
+}
+.filter-input input {
+  width: 16px;
+  height: 16px;
+}
+
+.filter-input label {
+  margin: 0 !important;
+}
+
+li.form-member.form-member1 .chosen-select {
+  height: 75%;
+  margin: 5px 0;
+  background-color: #fff;
+  border: none;
+  color: #95a8b4;
+  border-radius: 2px;
+}
+li.form-member.form-member1 .chosen-select option {
+  background-color: white;
+  color: black;
+  padding: 5px 0;
+}
+
+/* Style for the hover state of options */
+li.form-member.form-member1 .chosen-selectoption:hover {
+  background-color: #e0e0e0 !important; /* Set the hover background color */
+  color: black; /* Set the hover text color */
+}
+.price-range-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider-img img {
+  width: 100%;
+}
+.slider-img {
+  position: relative;
+}
+
+.slider-content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+}
+
+.slider-content-wrapper .row {
+  width: 100%;
+}
+.bottom-80px {
+  bottom: 80px;
+}
+.background-second-color {
+  background-color: #fdbe19;
+  padding: 0 !important;
+  margin: 0;
+}
+.hero-form {
+  z-index: 2;
+  background: #fff;
+}
+.padding-30px {
+  padding: 30px;
+}
+img.hidden-xs {
+  width: 100%;
+}
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 32px -8px #858585;
+  -moz-box-shadow: 0px 0px 32px -8px #858585;
+  box-shadow: 0px 0px 32px -8px #858585;
+}
+.booking-form-box {
+  background: #fff;
+}
+a.nav-link.active {
+  background-color: #1db8c1 !important;
+  color: #fff !important;
+}
+
+a.nav-link {
+  font-weight: 600;
+  color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+a.nav-link:hover {
+  background-color: #1db8c1 !important;
+  color: #fff !important;
+}
+.slider-content {
+  max-width: 500px;
+}
+h1.title {
+  color: rgb(29, 184, 193);
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+h3.sm-title {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.slider-content p {
+  color: rgb(99, 99, 99);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+a.custom-btn {
+  background: rgba(243, 190, 78, 0.75);
+  padding: 7px 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.range-slider input {
+  display: none;
+}
+ul.footer-menu-items li a {
+  color: #1db8c1;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.banner-form-wrapper {
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px 0;
+}

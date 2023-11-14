@@ -114,7 +114,7 @@ a {
 }
 a:visited,
 a:hover {
-  color: #8bcf17;
+  color: #ea045e;
 }
 p {
   margin-bottom: 30px;
@@ -125,7 +125,7 @@ p {
   height: auto;
 }
 .higlight {
-  color: #8bcf17;
+  color: #ea045e;
 }
 .emphasize {
   font-weight: 900;
@@ -356,11 +356,11 @@ ul.list-caret small {
 .button:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #8bcf17;
-  border-top: solid 1px #8bcf17;
-  border-left: solid 1px #8bcf17;
-  border-right: solid 1px #8bcf17;
-  border-bottom: solid 1px #8bcf17;
+  background-color: #ea045e;
+  border-top: solid 1px #ea045e;
+  border-left: solid 1px #ea045e;
+  border-right: solid 1px #ea045e;
+  border-bottom: solid 1px #ea045e;
 }
 .button.mini {
   padding: 3px 16px;
@@ -942,14 +942,14 @@ form.location-search input[type="text"] {
 }
 form.location-search input[type="submit"].button,
 .button.load-more {
-  background: #8bcf17;
-  border-color: #8bcf17;
+  background: #ea045e;
+  border-color: #ea045e;
   color: #ffffff;
 }
 form.location-search input[type="submit"].button:hover,
 button.load-more:hover {
-  background: #8bcf17;
-  border-color: #8bcf17;
+  background: #ea045e;
+  border-color: #ea045e;
 }
 form.location-search label[for="destination"] {
   font-size: 24px;
@@ -1598,7 +1598,7 @@ footer input[type="submit"] {
   font-weight: 700;
 }
 .tour-category-item .part h3.category-heading {
-  background-color: #8bcf17;
+  background-color: #ea045e;
   color: #ffffff;
   position: relative;
   height: 41px;
@@ -1764,7 +1764,7 @@ footer input[type="submit"] {
   text-align: center;
 }
 .entry .entry-meta span.review a {
-  color: #8bcf17;
+  color: #ea045e;
 }
 .entry .entry-meta span.review a:before {
   content: "";
@@ -2099,7 +2099,7 @@ footer input[type="submit"] {
   background: #edf3f7;
 }
 .hotels-filter .search-heading {
-  background: #8bcf17;
+  background: #ea045e;
   color: #ffffff;
   height: 40px;
   position: relative;
@@ -2174,7 +2174,8 @@ form.hotels-filter-form input[type="submit"] {
   margin-right: 10px;
 }
 form.hotels-filter-form .chosen-container-single .chosen-single div b {
-  background: #8bcf17 url("../../assets/images/select-dropdown.png") center center no-repeat;
+  background: #8bcf17 url("../../assets/images/select-dropdown.png") center
+    center no-repeat;
 }
 form.hotels-filter-form .chosen-results li {
   margin-right: 5px;
@@ -2409,13 +2410,13 @@ form.hotels-filter-form a.chosen-single {
   /*    margin-top: 30px;*/
 }
 .grid-contents .load-more-posts .button {
-  background: #8bcf17;
-  border-color: #8bcf17;
+  background: #ea045e;
+  border-color: #ea045e;
   color: #ffffff;
 }
 .grid-contents .load-more-posts .button:hover {
-  background: #8bcf17;
-  border-color: #8bcf17;
+  background: #ea045e;
+  border-color: #ea045e;
 }
 /** 
  * Contact Section 
@@ -2537,7 +2538,7 @@ form.hotels-filter-form a.chosen-single {
   margin-bottom: 50px;
 }
 .widget h3.widget-title {
-  color: #8bcf17;
+  color: #ea045e;
   font-size: 18px;
   background: url("images/widget-title-bg.png") 100% 50% no-repeat;
   margin-top: 0;

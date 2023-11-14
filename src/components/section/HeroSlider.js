@@ -1,28 +1,244 @@
 import React from "react";
+import {
+  EffectFade,
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import AOS from "aos";
 import "swiper/css";
 import HeroFrom from "./HeroFrom";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/effect-fade";
 const HeroSlider = () => {
   return (
     <>
-      <section className="hero">
-        <div className="hero-wrapper">
-          <div className="hero-form">
-            <HeroFrom />
+      <div className="banner-form-wrapper">
+        <div className="banner-form">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-5">
+                <div class="search-filter row no-gutters box-shadow sm-tb-40px">
+                  <div class="filter-tabs  col-lg-5 background-second-color">
+                    <img
+                      class="hidden-xs"
+                      src="http://placehold.it/200x130"
+                      alt=""
+                    />
+                    <ul class="nav nav-tabs flex-column" role="tablist">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active"
+                          data-toggle="tab"
+                          href="#home"
+                          role="tab"
+                        >
+                          <i class="fa fa-hotel"></i> Hotels
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          data-toggle="tab"
+                          href="#profile"
+                          role="tab"
+                        >
+                          <i class="fa fa-plane"></i> Flights
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          data-toggle="tab"
+                          href="#messages"
+                          role="tab"
+                        >
+                          <i class="fa fa-cab"></i> Cars
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="filter-output booking-form-box col-lg-7">
+                    {/* <!-- Tab panes --> */}
+                    <div class="tab-content  padding-30px background-white">
+                      <div class="tab-pane active" id="home" role="tabpanel">
+                        <div class="form-group margin-bottom-5px">
+                          <label>Destination</label>
+                          <div class="destination">
+                            <input
+                              type="text"
+                              class="input-text full-width"
+                              placeholder="Enter Destination"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group margin-bottom-5px">
+                          <label>Check Out</label>
+                          <div class="date-input">
+                            <input
+                              type="text"
+                              class="input-text datepicker full-width"
+                              placeholder="15 / 5 / 2017"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group margin-bottom-5px">
+                          <label>Check Out</label>
+                          <div class="date-input">
+                            <input
+                              type="text"
+                              class="input-text datepicker full-width"
+                              placeholder="15 / 5 / 2017"
+                            />
+                          </div>
+                        </div>
+                        <div class="row margin-bottom-10px">
+                          <div class="form-group col">
+                            <label>Rooms</label>
+                            <div class="rooms">
+                              <input
+                                type="text"
+                                class="input-text full-width"
+                                placeholder="1"
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group col">
+                            <label>Children</label>
+                            <div class="children">
+                              <input
+                                type="text"
+                                class="input-text full-width"
+                                placeholder="0"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <a
+                          href="#"
+                          class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
+                        >
+                          <i class="fa fa-search"></i> Hotel Search
+                        </a>
+                      </div>
+                      <div class="tab-pane" id="profile" role="tabpanel">
+                        {/* <!-- ====== Flights ====== --> */}
+                        <div class="form-group margin-bottom-5px">
+                          <label>Flying from:</label>
+                          <div class="destination">
+                            <input
+                              type="text"
+                              class="input-text full-width"
+                              placeholder="Flying from"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group margin-bottom-5px">
+                          <label>Flying to:</label>
+                          <div class="destination">
+                            <input
+                              type="text"
+                              class="input-text full-width"
+                              placeholder="Flying to"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group margin-bottom-5px">
+                          <label>Departing:</label>
+                          <div class="date-input">
+                            <input
+                              type="text"
+                              class="input-text datepicker full-width"
+                              placeholder="15 / 5 / 2017"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group margin-bottom-25px">
+                          <label>Returning:</label>
+                          <div class="date-input">
+                            <input
+                              type="text"
+                              class="input-text datepicker full-width"
+                              placeholder="15 / 5 / 2017"
+                            />
+                          </div>
+                        </div>
+                        <a
+                          href="#"
+                          class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
+                        >
+                          <i class="fa fa-search"></i> Flights Search
+                        </a>
+                        {/* <!-- ====== //  Flights ====== --> */}
+                      </div>
+                      <div class="tab-pane" id="messages" role="tabpanel">
+                        {/* <!-- ====== Cars ====== --> */}
+                        <div class="form-group  margin-bottom-5px">
+                          <label>Location:</label>
+                          <div class="destination">
+                            <input
+                              type="text"
+                              class="input-text full-width"
+                              placeholder="Location"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group  margin-bottom-5px">
+                          <label>Type of car :</label>
+                          <div class="destination">
+                            <input
+                              type="text"
+                              class="input-text full-width"
+                              placeholder="Type of car"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group  margin-bottom-5px">
+                          <label>Pick up Date:</label>
+                          <div class="date-input">
+                            <input
+                              type="text"
+                              class="input-text datepicker full-width"
+                              placeholder="15 / 5 / 2017"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group margin-bottom-25px">
+                          <label>Drop off Date:</label>
+                          <div class="date-input">
+                            <input
+                              type="text"
+                              class="input-text datepicker full-width"
+                              placeholder="15 / 5 / 2017"
+                            />
+                          </div>
+                        </div>
+                        <a
+                          href="#"
+                          class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
+                        >
+                          <i class="fa fa-search"></i> Cars Search
+                        </a>
+                        {/* <!-- ====== //  Cars ====== --> */}
+                      </div>
+                    </div>
+                    {/* <!-- Tab panes --> */}
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <SwiperSlide></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-      </Swiper>
+      </div>
     </>
   );
 };
