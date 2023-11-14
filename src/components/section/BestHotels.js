@@ -272,8 +272,8 @@ const BestHotels = () => {
                   <h3 className="widget-title">Price Filter</h3>
                   {/* <PriceRangeSlider/> */}
                   <div className="price-range-item">
-                    <p>$0</p>
-                    <p>$100</p>
+                    <p>৳0</p>
+                    <p>৳100</p>
                   </div>
                   <RangeSlider />
                 </div>

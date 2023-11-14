@@ -36,42 +36,54 @@ const OurTravel = () => {
             <div className="controls">
               <ul>
                 <li
-                  className={`${activeTravel === 1 ? "filter active" : "filter"} `}
+                  className={`${
+                    activeTravel === 1 ? "filter active" : "filter"
+                  } `}
                   onClick={() => toggleActive(1)}
                 >
                   All
                 </li>
 
                 <li
-                  className={`${activeTravel === 2 ? "filter active" : "filter"} `}
+                  className={`${
+                    activeTravel === 2 ? "filter active" : "filter"
+                  } `}
                   onClick={() => toggleActive(2)}
                 >
                   Asia
                 </li>
 
                 <li
-                  className={`${activeTravel === 3 ? "filter active" : "filter"} `}
+                  className={`${
+                    activeTravel === 3 ? "filter active" : "filter"
+                  } `}
                   onClick={() => toggleActive(3)}
                 >
                   Africa
                 </li>
 
                 <li
-                  className={`${activeTravel === 4 ? "filter active" : "filter"} `}
+                  className={`${
+                    activeTravel === 4 ? "filter active" : "filter"
+                  } `}
                   onClick={() => toggleActive(4)}
                 >
                   Oceania
                 </li>
 
                 <li
-                  className={`${activeTravel === 5 ? "filter active" : "filter"} `}
+                  className={`${
+                    activeTravel === 5 ? "filter active" : "filter"
+                  } `}
                   onClick={() => toggleActive(5)}
                 >
                   Europe
                 </li>
 
                 <li
-                  className={`${activeTravel === 6 ? "filter active" : "filter"} `}
+                  className={`${
+                    activeTravel === 6 ? "filter active" : "filter"
+                  } `}
                   onClick={() => toggleActive(6)}
                 >
                   America
@@ -189,7 +201,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $150
+                                  ৳150
                                 </span>
                                 /Night
                               </span>
@@ -224,7 +236,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $199
+                                  ৳199
                                 </span>
                                 /Night
                               </span>
@@ -259,7 +271,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $100
+                                  ৳100
                                 </span>
                                 /Night
                               </span>
@@ -384,7 +396,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $150
+                                  ৳150
                                 </span>
                                 /Night
                               </span>
@@ -419,7 +431,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $199
+                                  ৳199
                                 </span>
                                 /Night
                               </span>
@@ -454,7 +466,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $100
+                                  ৳100
                                 </span>
                                 /Night
                               </span>
@@ -579,7 +591,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $150
+                                  ৳150
                                 </span>
                                 /Night
                               </span>
@@ -614,7 +626,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $199
+                                  ৳199
                                 </span>
                                 /Night
                               </span>
@@ -649,7 +661,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $100
+                                  ৳100
                                 </span>
                                 /Night
                               </span>
@@ -774,7 +786,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $150
+                                  ৳150
                                 </span>
                                 /Night
                               </span>
@@ -809,7 +821,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $199
+                                  ৳199
                                 </span>
                                 /Night
                               </span>
@@ -844,7 +856,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $100
+                                  ৳100
                                 </span>
                                 /Night
                               </span>
@@ -976,7 +988,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $150
+                                  ৳150
                                 </span>
                                 /Night
                               </span>
@@ -1011,7 +1023,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $199
+                                  ৳199
                                 </span>
                                 /Night
                               </span>
@@ -1046,7 +1058,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $100
+                                  ৳100
                                 </span>
                                 /Night
                               </span>
@@ -1171,7 +1183,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $150
+                                  ৳150
                                 </span>
                                 /Night
                               </span>
@@ -1206,7 +1218,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $199
+                                  ৳199
                                 </span>
                                 /Night
                               </span>
@@ -1241,7 +1253,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $100
+                                  ৳100
                                 </span>
                                 /Night
                               </span>
@@ -1373,7 +1385,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $150
+                                  ৳150
                                 </span>
                                 /Night
                               </span>
@@ -1408,7 +1420,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $199
+                                  ৳199
                                 </span>
                                 /Night
                               </span>
@@ -1443,7 +1455,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $100
+                                  ৳100
                                 </span>
                                 /Night
                               </span>
@@ -1575,7 +1587,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $150
+                                  ৳150
                                 </span>
                                 /Night
                               </span>
@@ -1610,7 +1622,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $199
+                                  ৳199
                                 </span>
                                 /Night
                               </span>
@@ -1645,7 +1657,7 @@ const OurTravel = () => {
 
                               <span className="price">
                                 <span className="higlight emphasize value">
-                                  $100
+                                  ৳100
                                 </span>
                                 /Night
                               </span>

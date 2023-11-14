@@ -2639,7 +2639,7 @@ form.hotels-filter-form a.chosen-single {
   margin-top: -1px;
 }
 .price-range-slider .ui-rangeSlider .ui-rangeSlider-label-value:before {
-  content: "$";
+  content: "৳";
 }
 /** 
  * Footer Section 
