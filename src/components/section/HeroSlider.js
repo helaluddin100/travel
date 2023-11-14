@@ -1,22 +1,15 @@
-import React from "react";
-import {
-  EffectFade,
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-} from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import AOS from "aos";
+import React, { useState } from "react";
 import "swiper/css";
-import HeroFrom from "./HeroFrom";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 const HeroSlider = () => {
+  const [activeFrom, setActiveFrom] = useState(1);
+  const toggleActive = (index) => {
+    setActiveFrom(index);
+  };
   return (
     <>
       <div className="banner-form-wrapper">
@@ -32,9 +25,14 @@ const HeroSlider = () => {
                       alt=""
                     />
                     <ul className="nav nav-tabs flex-column" role="tablist">
-                      <li className="nav-item">
+                      <li
+                        className={
+                          activeFrom === 1 ? "nav-item active" : "nav-item"
+                        }
+                        onClick={() => toggleActive(1)}
+                      >
                         <a
-                          className="nav-link active"
+                          className="nav-link"
                           data-toggle="tab"
                           href="#home"
                           role="tab"
@@ -42,7 +40,10 @@ const HeroSlider = () => {
                           <i className="fa fa-hotel"></i> Hotels
                         </a>
                       </li>
-                      <li className="nav-item">
+                      <li   className={
+                          activeFrom === 2 ? "nav-item active" : "nav-item"
+                        }
+                        onClick={() => toggleActive(2)}>
                         <a
                           className="nav-link"
                           data-toggle="tab"
@@ -52,7 +53,10 @@ const HeroSlider = () => {
                           <i className="fa fa-plane"></i> Flights
                         </a>
                       </li>
-                      <li className="nav-item">
+                      <li  className={
+                          activeFrom === 3 ? "nav-item active" : "nav-item"
+                        }
+                        onClick={() => toggleActive(3)}>
                         <a
                           className="nav-link"
                           data-toggle="tab"
@@ -67,9 +71,13 @@ const HeroSlider = () => {
                   </div>
                   <div className="filter-output booking-form-box col-lg-7">
                     {/* <!-- Tab panes --> */}
-                    <div className="tab-content  padding-30px background-white">
+                    <div className=" padding-30px background-white">
                       <div
-                        className="tab-pane active"
+                        className={
+                          activeFrom === 1
+                            ? "from-wrapper active"
+                            : "from-wrapper"
+                        }
                         id="home"
                         role="tabpanel"
                       >
@@ -87,7 +95,7 @@ const HeroSlider = () => {
                           <label>Check Out</label>
                           <div className="date-input">
                             <input
-                              type="text"
+                             type="date"
                               className="input-text datepicker full-width"
                               placeholder="15 / 5 / 2017"
                             />
@@ -97,7 +105,7 @@ const HeroSlider = () => {
                           <label>Check Out</label>
                           <div className="date-input">
                             <input
-                              type="text"
+                              type="date"
                               className="input-text datepicker full-width"
                               placeholder="15 / 5 / 2017"
                             />
@@ -132,7 +140,15 @@ const HeroSlider = () => {
                           <i className="fa fa-search"></i> Hotel Search
                         </a>
                       </div>
-                      <div className="tab-pane" id="profile" role="tabpanel">
+                      <div
+                        className={
+                          activeFrom === 2
+                            ? "from-wrapper active"
+                            : "from-wrapper"
+                        }
+                        id="profile"
+                        role="tabpanel"
+                      >
                         {/* <!-- ====== Flights ====== --> */}
                         <div className="form-group margin-bottom-5px">
                           <label>Flying from:</label>
@@ -158,7 +174,7 @@ const HeroSlider = () => {
                           <label>Departing:</label>
                           <div className="date-input">
                             <input
-                              type="text"
+                              type="date"
                               className="input-text datepicker full-width"
                               placeholder="15 / 5 / 2017"
                             />
@@ -168,7 +184,7 @@ const HeroSlider = () => {
                           <label>Returning:</label>
                           <div className="date-input">
                             <input
-                              type="text"
+                              type="date"
                               className="input-text datepicker full-width"
                               placeholder="15 / 5 / 2017"
                             />
@@ -182,7 +198,15 @@ const HeroSlider = () => {
                         </a>
                         {/* <!-- ====== //  Flights ====== --> */}
                       </div>
-                      <div className="tab-pane" id="messages" role="tabpanel">
+                      <div
+                        className={
+                          activeFrom === 3
+                            ? "from-wrapper active"
+                            : "from-wrapper"
+                        }
+                        id="messages"
+                        role="tabpanel"
+                      >
                         {/* <!-- ====== Cars ====== --> */}
                         <div className="form-group  margin-bottom-5px">
                           <label>Location:</label>
@@ -208,7 +232,7 @@ const HeroSlider = () => {
                           <label>Pick up Date:</label>
                           <div className="date-input">
                             <input
-                              type="text"
+                               type="date"
                               className="input-text datepicker full-width"
                               placeholder="15 / 5 / 2017"
                             />
@@ -218,7 +242,7 @@ const HeroSlider = () => {
                           <label>Drop off Date:</label>
                           <div className="date-input">
                             <input
-                              type="text"
+                               type="date"
                               className="input-text datepicker full-width"
                               placeholder="15 / 5 / 2017"
                             />

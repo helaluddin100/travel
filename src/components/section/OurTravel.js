@@ -36,42 +36,42 @@ const OurTravel = () => {
             <div className="controls">
               <ul>
                 <li
-                  class={`${activeTravel === 1 ? "filter active" : "filter"} `}
+                  className={`${activeTravel === 1 ? "filter active" : "filter"} `}
                   onClick={() => toggleActive(1)}
                 >
                   All
                 </li>
 
                 <li
-                  class={`${activeTravel === 2 ? "filter active" : "filter"} `}
+                  className={`${activeTravel === 2 ? "filter active" : "filter"} `}
                   onClick={() => toggleActive(2)}
                 >
                   Asia
                 </li>
 
                 <li
-                  class={`${activeTravel === 3 ? "filter active" : "filter"} `}
+                  className={`${activeTravel === 3 ? "filter active" : "filter"} `}
                   onClick={() => toggleActive(3)}
                 >
                   Africa
                 </li>
 
                 <li
-                  class={`${activeTravel === 4 ? "filter active" : "filter"} `}
+                  className={`${activeTravel === 4 ? "filter active" : "filter"} `}
                   onClick={() => toggleActive(4)}
                 >
                   Oceania
                 </li>
 
                 <li
-                  class={`${activeTravel === 5 ? "filter active" : "filter"} `}
+                  className={`${activeTravel === 5 ? "filter active" : "filter"} `}
                   onClick={() => toggleActive(5)}
                 >
                   Europe
                 </li>
 
                 <li
-                  class={`${activeTravel === 6 ? "filter active" : "filter"} `}
+                  className={`${activeTravel === 6 ? "filter active" : "filter"} `}
                   onClick={() => toggleActive(6)}
                 >
                   America

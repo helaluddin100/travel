@@ -20,6 +20,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+  
 }
 .margin-bottom-20px {
   margin-bottom: 20px;
@@ -199,4 +200,23 @@ ul.footer-menu-items li a {
   background-repeat: no-repeat;
   background-position: center;
   padding: 150px 0;
+}
+.nav-item{
+  display: none;
+}
+.nav-item.active{
+  display: block;
+  color: #fff !important;
+  background-color: #1db8c1 !important
+}
+.nav-item.active a {
+  color: #fff !important;
+  background-color: #1db8c1 !important
+
+}
+.from-wrapper{
+  display: none;
+}
+.from-wrapper.active{
+  display: block;
 }
