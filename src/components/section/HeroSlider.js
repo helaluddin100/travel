@@ -21,7 +21,7 @@ const HeroSlider = () => {
                   <div className="filter-tabs  col-lg-5 background-second-color">
                     <img
                       className="hidden-xs"
-                      src="http://placehold.it/200x130"
+                      src="assets/images/content/from-img.png"
                       alt=""
                     />
                     <ul className="nav nav-tabs flex-column" role="tablist">

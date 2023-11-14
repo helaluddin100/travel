@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
+  const [toggle, setToggle] = useState(true);
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
   return (
     <header id="header" className="wide-fat">
       <div className="container">
@@ -262,9 +266,9 @@ function Header() {
       </div>
 
       <div className="toggle-menu-holder">
-        <a className="toggle-menu" href="#"></a>
+        <a className="toggle-menu" href="#" onClick={handleToggle}></a>
 
-        <div className="menu-body closed">
+        <div className={toggle ? "menu-body closed" : "menu-body"}>
           <ul>
             <li>
               <a data-toggle="modal" data-target="#loginBox" href="#">
