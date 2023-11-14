@@ -2,6 +2,7 @@ import React from "react";
 import HeroSlider from "./section/HeroSlider";
 import OurTravel from "./section/OurTravel";
 import BestHotels from "./section/BestHotels";
+import PartnerItem from "./section/PartnerItem";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <HeroSlider />
       <OurTravel />
       <BestHotels />
+      <PartnerItem />
     </>
   );
 };

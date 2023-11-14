@@ -2,5 +2,16 @@
     .images-feed {
         margin-top: 30px;
       }
+      .images_slider .images_slider_wrapper .images_slider_imgs {
+        display: grid;
+        min-width: fit-content;
+        animation: aboutImgSlider1 30s linear infinite;
+        -webkit-animation: aboutImgSlider1 30s linear infinite;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+      .padding-tb-100px {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
     
 }
