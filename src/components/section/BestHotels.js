@@ -26,7 +26,7 @@ const BestHotels = () => {
           </article>
 
           <div className="hotels-filter">
-            <div className="container">
+            <div className="container p-0">
               <div className="search-heading col-md-3 col-sm-6">
                 <h3>120 Hotels from $150</h3>
               </div>
