@@ -1,7 +1,8 @@
-import React from "react";
+
 import PriceRangeSlider from "./PriceRangeSlider";
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
+
 const BestHotels = () => {
   return (
     <>
@@ -117,7 +118,7 @@ const BestHotels = () => {
 
           <div className="contents-wrapper">
             <div className="row">
-              <div className="sidebar col-md-3 col-sm-6">
+              <div className="sidebar col-md-3">
                 <div className="widget">
                   <h3 className="widget-title">Hotel Search</h3>
 
@@ -272,7 +273,7 @@ const BestHotels = () => {
                   </form>
                 </div>
 
-                <div className="widget">
+                <div className="widget md-none">
                   <h3 className="widget-title">Price Filter</h3>
                   {/* <PriceRangeSlider/> */}
                   <div className="price-range-item">
@@ -282,7 +283,7 @@ const BestHotels = () => {
                   <RangeSlider />
                 </div>
 
-                <div className="widget hotel-type-filter-widget">
+                <div className="widget md-none hotel-type-filter-widget">
                   <h3 className="widget-title">Type</h3>
 
                   <form>
@@ -321,7 +322,7 @@ const BestHotels = () => {
                 </div>
               </div>
 
-              <div className="contents grid-contents col-md-9 col-sm-6">
+              <div className="contents grid-contents col-md-9">
                 <div className="row">
                   <div className="content col-md-4 col-sm-12">
                     <div className="inner">

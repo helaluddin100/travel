@@ -23,29 +23,9 @@ function Header() {
             <nav className="navigation">
               <ul className="hidden-xs hidden-sm hidden-md">
                 <li className="menu-item about-us">
-                  <a
-                    className="dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                  >
+                  <a href="#">
                     <i className="icon_group"></i> Home
                   </a>
-
-                  <ul className="dropdown-menu" role="menu">
-                    <li className="active" role="presentation">
-                      <a role="menuitem" tabIndex="-1" href="index.html">
-                        Homepage-1
-                      </a>
-
-                      <a role="menuitem" tabIndex="-1" href="index-2.html">
-                        Homepage-2
-                      </a>
-
-                      <a role="menuitem" tabIndex="-1" href="index-mini.html">
-                        Homepage-3
-                      </a>
-                    </li>
-                  </ul>
                 </li>
 
                 <li className="menu-item destinations">
@@ -55,45 +35,9 @@ function Header() {
                 </li>
 
                 <li className="menu-item our-travel">
-                  <a
-                    className="dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                  >
+                  <a href="#">
                     <i className="icon_globe_alt"></i> Our Travel
                   </a>
-
-                  <ul className="dropdown-menu" role="menu">
-                    <li className="active" role="presentation">
-                      <a role="menuitem" tabIndex="-1" href="our-travel.html">
-                        our travel
-                      </a>
-
-                      <a
-                        role="menuitem"
-                        tabIndex="-1"
-                        href="our-travel-sidebar.html"
-                      >
-                        our travel-sidebar
-                      </a>
-
-                      <a
-                        role="menuitem"
-                        tabIndex="-1"
-                        href="our-travel-right-sidebar.html"
-                      >
-                        our travel-right sidebar
-                      </a>
-
-                      <a
-                        role="menuitem"
-                        tabIndex="-1"
-                        href="our-travel-detail.html"
-                      >
-                        our travel-detail
-                      </a>
-                    </li>
-                  </ul>
                 </li>
 
                 <li className="menu-item special-offers">
@@ -103,97 +47,25 @@ function Header() {
                 </li>
 
                 <li className="menu-item hotel">
-                  <a
-                    className="dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                  >
+                  <a href="#">
                     <i className="icon_building_alt"></i> List
                   </a>
-
-                  <ul className="dropdown-menu" role="menu">
-                    <li className="active" role="presentation">
-                      <a role="menuitem" tabIndex="-1" href="hotel-list.html">
-                        hotel list
-                      </a>
-
-                      <a
-                        role="menuitem"
-                        tabIndex="-1"
-                        href="hotel-list-wide.html"
-                      >
-                        hotel list-wide
-                      </a>
-
-                      <a
-                        role="menuitem"
-                        tabIndex="-1"
-                        href="hotel-list-right-sidebar.html"
-                      >
-                        hotel list-sidebar
-                      </a>
-
-                      <a
-                        role="menuitem"
-                        tabIndex="-1"
-                        href="hotel-list-fullwidth.html"
-                      >
-                        hotel list-fullwidth
-                      </a>
-                    </li>
-                  </ul>
                 </li>
 
                 <li className="menu-item shortcodes">
-                  <a
-                    className="dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#"
-                  >
-                    <i className="icon_map"></i> Hotels
+                  <a href="#" className="active">
+                    <i className="fa fa-shopping-cart"></i> Shop
                   </a>
-
-                  <ul className="dropdown-menu" role="menu">
-                    <li className="active" role="presentation">
-                      <a role="menuitem" tabIndex="-1" href="hotel-detail.html">
-                        hotel detail
-                      </a>
-
-                      <a
-                        role="menuitem"
-                        tabIndex="-1"
-                        href="hotel-detail-travel-info.html"
-                      >
-                        hotel detail-travel info
-                      </a>
-
-                      <a
-                        role="menuitem"
-                        tabIndex="-1"
-                        href="hotel-detail-payment.html"
-                      >
-                        hotel detail-payment
-                      </a>
-
-                      <a
-                        role="menuitem"
-                        tabIndex="-1"
-                        href="hotel-detail-confirm.html"
-                      >
-                        hotel detail-confirm
-                      </a>
-                    </li>
-                  </ul>
                 </li>
 
                 <li className="menu-item contact">
                   <a href="page-site-map.html">
-                    <i className="icon_contacts"></i> Pages
+                    <i className="fa fa-user-circle-o"></i> Login
                   </a>
                 </li>
               </ul>
 
-              <select className="top-drop-menu nav visible-sm visible-xs visible-md">
+              {/* <select className="top-drop-menu nav visible-sm visible-xs visible-md">
                 <optgroup label="Homepage">
                   <option value="index.html">Homepage-1</option>
 
@@ -259,7 +131,7 @@ function Header() {
                 <optgroup label="Contact">
                   <option value="contact.html">Contact</option>
                 </optgroup>
-              </select>
+              </select> */}
             </nav>
           </div>
         </div>

@@ -1,4 +1,13 @@
 @media only screen and (max-width: 768px) {
+  .md-none {
+    display: none;
+  }
+  #hotels .page-title {
+    margin: 0;
+  }
+  .nav-item.active a {
+    padding: 10px 15px;
+  }
   .images-feed {
     margin-top: 30px;
     display: none;
@@ -9,7 +18,8 @@
   }
   .banner-form-wrapper {
     background-image: none;
-    padding: 50px 0 0 0;
+    padding: 50px 0px 0 0px;
+    padding-top: 100px;
   }
   #our-travel {
     padding-top: 50px !important;
@@ -37,7 +47,7 @@
   #header .branding {
     width: 100%;
     text-align: left !important;
-    padding-top: 14px;
+    /* padding-top: 14px; */
   }
   #header .toggle-menu-holder .toggle-menu {
     position: relative !important;
@@ -45,6 +55,7 @@
   header#header {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #ddd;
   }
 }
 @media only screen and (max-width: 460px) {

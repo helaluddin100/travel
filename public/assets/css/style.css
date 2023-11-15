@@ -1,3 +1,6 @@
+@import url(elegant-font/style.css);
+@import url(css/font-awesome.min.css);
+
 body {
   font-size: 14px !important;
 }
@@ -7,6 +10,12 @@ ul {
 }
 a {
   text-decoration: none !important;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .images-feed {
   display: grid;
@@ -198,7 +207,8 @@ ul.footer-menu-items li a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 150px 0;
+  padding: 100px 0;
+  padding-top: 200px;
 }
 .nav-item {
   display: none;
@@ -211,6 +221,21 @@ ul.footer-menu-items li a {
 .nav-item.active a {
   color: #fff !important;
   background-color: #1db8c1 !important;
+  padding: 25px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-item a {
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav-item a i {
+  display: none;
+}
+.nav-item.active a i {
+  display: block;
 }
 .from-wrapper {
   display: none;
@@ -221,10 +246,10 @@ ul.footer-menu-items li a {
 #header .toggle-menu-holder .menu-body {
   right: 0%;
 }
-header .toggle-menu-holder .toggle-menu:hover,
+/* header .toggle-menu-holder .toggle-menu:hover,
 #header .toggle-menu-holder .toggle-menu {
   background-color: #8bcf17;
-}
+} */
 .grid-contents .thumbnailz .overlay {
   background: #ea045e url("../../assets/images/arrow-right-circle.png") 50% 50%
     no-repeat !important;
@@ -232,6 +257,14 @@ header .toggle-menu-holder .toggle-menu:hover,
 #main-menu a:hover {
   color: #fff;
   background: #ea045e;
+}
+
+#main-menu a.active {
+  color: #fff;
+  background: #ea045e;
+}
+#main-menu a.active i {
+  color: #fff;
 }
 #main-menu li a:before {
   border-bottom: 3px solid #ea045e;
@@ -294,8 +327,73 @@ a.btn-sm {
   background: #1db8c1 !important;
   color: #fff;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+a.btn-sm i {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ea045e;
+  height: 40px;
+}
+
+a.btn-sm span {
+  padding: 0 10px;
 }
 
 a.btn-sm:hover {
   background: #ea045e !important;
 }
+
+#header .branding {
+  margin-top: 15px;
+}
+/* .search-filter .destination {
+  position: relative;
+}
+.search-filter .destination::before {
+  content: "";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #ea045e;
+  z-index: 1;
+}
+.search-filter input {
+  position: relative;
+  padding-left: 35px;
+}
+.search-filter .rooms {
+  position: relative;
+} */
+/* 
+.search-filter .rooms::before {
+  content: "";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #ea045e;
+  z-index: 1;
+}
+.search-filter .children {
+  position: relative;
+}
+
+.search-filter .children::before {
+  content: "";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #ea045e;
+  z-index: 1;
+}
+.search-filter .date-input {
+  position: relative;
+} */

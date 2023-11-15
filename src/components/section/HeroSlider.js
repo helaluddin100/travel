@@ -16,9 +16,9 @@ const HeroSlider = () => {
         <div className="banner-form">
           <div className="container">
             <div className="row">
-              <div className="col-md-5">
+              <div className="col-xl-5 col-lg-6 col-md-9">
                 <div className="search-filter row no-gutters box-shadow sm-tb-40px">
-                  <div className="filter-tabs  col-lg-5 background-second-color">
+                  <div className="filter-tabs  col-md-5 background-second-color">
                     <img
                       className="hidden-xs"
                       src="assets/images/content/from-img.png"
@@ -37,7 +37,7 @@ const HeroSlider = () => {
                           href="#home"
                           role="tab"
                         >
-                          <i class="fas fa-hotel"></i> Hotels
+                          <i class="fa fa-hotel"></i> Hotels
                         </a>
                       </li>
                       <li
@@ -70,10 +70,26 @@ const HeroSlider = () => {
                           <i className="fa fa-cab"></i> Cars
                         </a>
                       </li>
+
+                      <li
+                        className={
+                          activeFrom === 4 ? "nav-item active" : "nav-item"
+                        }
+                        onClick={() => toggleActive(4)}
+                      >
+                        <a
+                          className="nav-link"
+                          data-toggle="tab"
+                          href="#messages"
+                          role="tab"
+                        >
+                          <i className="icon_pin"></i> Cities
+                        </a>
+                      </li>
                     </ul>
                     <div className="clearfix"></div>
                   </div>
-                  <div className="filter-output booking-form-box col-lg-7">
+                  <div className="filter-output booking-form-box col-md-7">
                     {/* <!-- Tab panes --> */}
                     <div className=" padding-30px background-white">
                       <div
@@ -96,7 +112,7 @@ const HeroSlider = () => {
                           </div>
                         </div>
                         <div className="form-group margin-bottom-5px">
-                          <label>Check Out</label>
+                          <label>Check-In</label>
                           <div className="date-input">
                             <input
                               type="date"
@@ -106,7 +122,7 @@ const HeroSlider = () => {
                           </div>
                         </div>
                         <div className="form-group margin-bottom-5px">
-                          <label>Check Out</label>
+                          <label>Check-Out</label>
                           <div className="date-input">
                             <input
                               type="date"
@@ -141,7 +157,8 @@ const HeroSlider = () => {
                           href="#"
                           className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
                         >
-                          <i className="fa fa-search"></i> Hotel Search
+                          <i className="fa fa-search"></i>{" "}
+                          <span>Hotel Search</span>
                         </a>
                       </div>
                       <div
@@ -198,7 +215,8 @@ const HeroSlider = () => {
                           href="#"
                           className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
                         >
-                          <i className="fa fa-search"></i> Flights Search
+                          <i className="fa fa-search"></i>{" "}
+                          <span>Flights Search</span>
                         </a>
                         {/* <!-- ====== //  Flights ====== --> */}
                       </div>
@@ -256,9 +274,70 @@ const HeroSlider = () => {
                           href="#"
                           className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
                         >
-                          <i className="fa fa-search"></i> Cars Search
+                          <i className="fa fa-search"></i>{" "}
+                          <span>Cars Search</span>
                         </a>
                         {/* <!-- ====== //  Cars ====== --> */}
+                      </div>
+
+                      <div
+                        className={
+                          activeFrom === 4
+                            ? "from-wrapper active"
+                            : "from-wrapper"
+                        }
+                        id="profile"
+                        role="tabpanel"
+                      >
+                        {/* <!-- ====== Flights ====== --> */}
+                        <div className="form-group margin-bottom-5px">
+                          <label>Flying from:</label>
+                          <div className="destination">
+                            <input
+                              type="text"
+                              className="input-text full-width"
+                              placeholder="Flying from"
+                            />
+                          </div>
+                        </div>
+                        <div className="form-group margin-bottom-5px">
+                          <label>Flying to:</label>
+                          <div className="destination">
+                            <input
+                              type="text"
+                              className="input-text full-width"
+                              placeholder="Flying to"
+                            />
+                          </div>
+                        </div>
+                        <div className="form-group margin-bottom-5px">
+                          <label>Departing:</label>
+                          <div className="date-input">
+                            <input
+                              type="date"
+                              className="input-text datepicker full-width"
+                              placeholder="15 / 5 / 2017"
+                            />
+                          </div>
+                        </div>
+                        <div className="form-group margin-bottom-25px">
+                          <label>Returning:</label>
+                          <div className="date-input">
+                            <input
+                              type="date"
+                              className="input-text datepicker full-width"
+                              placeholder="15 / 5 / 2017"
+                            />
+                          </div>
+                        </div>
+                        <a
+                          href="#"
+                          className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
+                        >
+                          <i className="fa fa-search"></i>{" "}
+                          <span>Cities Search</span>
+                        </a>
+                        {/* <!-- ====== //  Flights ====== --> */}
                       </div>
                     </div>
                     {/* <!-- Tab panes --> */}
