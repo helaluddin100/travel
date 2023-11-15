@@ -1,7 +1,3 @@
-import React, { useRef, useState } from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 const PartnerItem = () => {
   return (
@@ -16,40 +12,40 @@ const PartnerItem = () => {
             <div className="images_slider">
               <div className="images_slider_wrapper">
                 <div className="images_slider_imgs">
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
+                  <img src="assets/images/partner3.png" alt="" />
+                  <img src="assets/images/partner4.png" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
+                  <img src="assets/images/partner3.png" alt="" />
+                  <img src="assets/images/partner4.png" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
                 </div>
                 <div className="images_slider_imgs">
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
+                  <img src="assets/images/partner3.png" alt="" />
+                  <img src="assets/images/partner4.png" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
+                  <img src="assets/images/partner3.png" alt="" />
+                  <img src="assets/images/partner4.png" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
                 </div>
                 <div className="images_slider_imgs">
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
-                  <img src="assets/images/400x400.png" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
+                  <img src="assets/images/partner3.png" alt="" />
+                  <img src="assets/images/partner4.png" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
+                  <img src="assets/images/partner3.png" alt="" />
+                  <img src="assets/images/partner4.png" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
                 </div>
               </div>
             </div>

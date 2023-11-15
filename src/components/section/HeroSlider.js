@@ -37,13 +37,15 @@ const HeroSlider = () => {
                           href="#home"
                           role="tab"
                         >
-                          <i className="fa fa-hotel"></i> Hotels
+                          <i class="fas fa-hotel"></i> Hotels
                         </a>
                       </li>
-                      <li   className={
+                      <li
+                        className={
                           activeFrom === 2 ? "nav-item active" : "nav-item"
                         }
-                        onClick={() => toggleActive(2)}>
+                        onClick={() => toggleActive(2)}
+                      >
                         <a
                           className="nav-link"
                           data-toggle="tab"
@@ -53,10 +55,12 @@ const HeroSlider = () => {
                           <i className="fa fa-plane"></i> Flights
                         </a>
                       </li>
-                      <li  className={
+                      <li
+                        className={
                           activeFrom === 3 ? "nav-item active" : "nav-item"
                         }
-                        onClick={() => toggleActive(3)}>
+                        onClick={() => toggleActive(3)}
+                      >
                         <a
                           className="nav-link"
                           data-toggle="tab"
@@ -95,7 +99,7 @@ const HeroSlider = () => {
                           <label>Check Out</label>
                           <div className="date-input">
                             <input
-                             type="date"
+                              type="date"
                               className="input-text datepicker full-width"
                               placeholder="15 / 5 / 2017"
                             />
@@ -232,7 +236,7 @@ const HeroSlider = () => {
                           <label>Pick up Date:</label>
                           <div className="date-input">
                             <input
-                               type="date"
+                              type="date"
                               className="input-text datepicker full-width"
                               placeholder="15 / 5 / 2017"
                             />
@@ -242,7 +246,7 @@ const HeroSlider = () => {
                           <label>Drop off Date:</label>
                           <div className="date-input">
                             <input
-                               type="date"
+                              type="date"
                               className="input-text datepicker full-width"
                               placeholder="15 / 5 / 2017"
                             />

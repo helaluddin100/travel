@@ -28,7 +28,7 @@ const BestHotels = () => {
           <div className="hotels-filter">
             <div className="container p-0">
               <div className="search-heading col-md-3 col-sm-6">
-                <h3>120 Hotels from $150</h3>
+                <h3>120 Hotels from ৳150</h3>
               </div>
 
               <div className="vertical-hotel-filter col-md-9 col-sm-6">
@@ -171,7 +171,11 @@ const BestHotels = () => {
                               <br />
 
                               <div className="quantity">
-                                <input id="adult" className="qty" type="text" />
+                                <input
+                                  id="adult"
+                                  className="qty"
+                                  type="number"
+                                />
                               </div>
                             </div>
                           </div>
@@ -341,7 +345,7 @@ const BestHotels = () => {
 
                           <span className="price">
                             <span className="higlight emphasize value">
-                              $150
+                              ৳150
                             </span>{" "}
                             /Night
                           </span>
@@ -421,7 +425,7 @@ const BestHotels = () => {
 
                           <span className="price">
                             <span className="higlight emphasize value">
-                              $150
+                              ৳150
                             </span>{" "}
                             /Night
                           </span>
@@ -501,7 +505,7 @@ const BestHotels = () => {
 
                           <span className="price">
                             <span className="higlight emphasize value">
-                              $150
+                              ৳150
                             </span>{" "}
                             /Night
                           </span>
@@ -581,7 +585,7 @@ const BestHotels = () => {
 
                           <span className="price">
                             <span className="higlight emphasize value">
-                              $150
+                              ৳150
                             </span>{" "}
                             /Night
                           </span>
@@ -661,7 +665,7 @@ const BestHotels = () => {
 
                           <span className="price">
                             <span className="higlight emphasize value">
-                              $150
+                              ৳150
                             </span>{" "}
                             /Night
                           </span>
@@ -741,7 +745,7 @@ const BestHotels = () => {
 
                           <span className="price">
                             <span className="higlight emphasize value">
-                              $150
+                              ৳150
                             </span>{" "}
                             /Night
                           </span>

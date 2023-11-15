@@ -75,32 +75,32 @@ function Footer() {
             <ul className="images-feed list-unstyled">
               <li className=" padding-tb-5px">
                 <a href="#" className="padding-lr-5px d-block">
-                  <img src="http://placehold.it/400x400" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
                 </a>
               </li>
               <li className=" padding-tb-5px">
                 <a href="#" className="padding-lr-5px d-block">
-                  <img src="http://placehold.it/400x400" alt="" />
+                  <img src="assets/images/partner2.png" alt="" />
                 </a>
               </li>
               <li className=" padding-tb-5px">
                 <a href="#" className="padding-lr-5px d-block">
-                  <img src="http://placehold.it/400x400" alt="" />
+                  <img src="assets/images/partner3.png" alt="" />
                 </a>
               </li>
               <li className=" padding-tb-5px">
                 <a href="#" className="padding-lr-5px d-block">
-                  <img src="http://placehold.it/400x400" alt="" />
+                  <img src="assets/images/partner4.png" alt="" />
                 </a>
               </li>
               <li className=" padding-tb-5px">
                 <a href="#" className="padding-lr-5px d-block">
-                  <img src="http://placehold.it/400x400" alt="" />
+                  <img src="assets/images/partner3.png" alt="" />
                 </a>
               </li>
               <li className=" padding-tb-5px">
                 <a href="#" className="padding-lr-5px d-block">
-                  <img src="http://placehold.it/400x400" alt="" />
+                  <img src="assets/images/partner1.png" alt="" />
                 </a>
               </li>
             </ul>
