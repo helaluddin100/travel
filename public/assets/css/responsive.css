@@ -21,7 +21,8 @@
     display: none !important;
   }
   #header .toggle-menu-holder .menu-body {
-    margin-top: 20px;
+    margin-top: 30px;
+    position: fixed;
   }
   ul.nav.nav-tabs.flex-column {
     flex-direction: inherit !important;
@@ -32,6 +33,18 @@
     gap: 15px;
     margin-top: 20px;
     margin-left: 12px;
+  }
+  #header .branding {
+    width: 100%;
+    text-align: left !important;
+    padding-top: 14px;
+  }
+  #header .toggle-menu-holder .toggle-menu {
+    position: relative !important;
+  }
+  header#header {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media only screen and (max-width: 460px) {
