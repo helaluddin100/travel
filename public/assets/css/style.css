@@ -404,7 +404,7 @@ a.btn-sm:hover {
   position: relative;
 } */
 
-.ant-input-number.css-dev-only-do-not-override-2q8sxy.qty {
+.ant-input-number .qty {
   width: 100% !important;
   border-radius: 4px !important;
 }
