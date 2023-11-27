@@ -358,56 +358,12 @@ a.btn-sm:hover {
 #header .branding {
   margin-top: 15px;
 }
-/* .search-filter .destination {
-  position: relative;
-}
-.search-filter .destination::before {
-  content: "";
-  font-family: FontAwesome;
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  color: #ea045e;
-  z-index: 1;
-}
-.search-filter input {
-  position: relative;
-  padding-left: 35px;
-}
-.search-filter .rooms {
-  position: relative;
-} */
-/* 
-.search-filter .rooms::before {
-  content: "";
-  font-family: FontAwesome;
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  color: #ea045e;
-  z-index: 1;
-}
-.search-filter .children {
-  position: relative;
-}
 
-.search-filter .children::before {
-  content: "";
-  font-family: FontAwesome;
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  color: #ea045e;
-  z-index: 1;
-}
-.search-filter .date-input {
-  position: relative;
-} */
 
-.ant-input-number .qty {
+.ant-input-number {
   width: 100% !important;
   border-radius: 4px !important;
-}
+};
 .ant-input-number.css-dev-only-do-not-override-2q8sxy.qty:focus {
  border:1px solid #ea045e !important;
 }

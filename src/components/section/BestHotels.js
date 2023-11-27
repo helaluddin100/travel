@@ -212,7 +212,7 @@ const BestHotels = () => {
                               <br />
 
                               <div className="quantity">
-                              <InputNumber className="qty" min={1} max={10} defaultValue={5} onChange={handleChange} />
+                              <InputNumber min={1} max={10} defaultValue={5} onChange={handleChange} />
                               </div>
                               
                             </div>
@@ -231,7 +231,7 @@ const BestHotels = () => {
                                   type="text"
                                   value={count}
                                 /> */}
-                                <InputNumber className="qty" min={1} max={10} defaultValue={5} onChange={handleChange} />
+                                <InputNumber  min={1} max={10} defaultValue={5} onChange={handleChange} />
 
                             
                               </div>
