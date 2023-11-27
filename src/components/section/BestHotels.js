@@ -231,7 +231,7 @@ const BestHotels = () => {
                                   type="text"
                                   value={count}
                                 /> */}
-                                <InputNumber  min={1} max={10} defaultValue={5} onChange={handleChange} />
+                                <InputNumber c min={1} max={10} defaultValue={5} onChange={handleChange} />
 
                             
                               </div>

@@ -364,17 +364,17 @@ a.btn-sm:hover {
   width: 100% !important;
   border-radius: 4px !important;
 };
-.ant-input-number.css-dev-only-do-not-override-2q8sxy.qty:focus {
+.ant-input-number.css-dev-only-do-not-override-2q8sxy:focus {
  border:1px solid #ea045e !important;
 }
-.ant-input-number.css-dev-only-do-not-override-2q8sxy.qty:hover {
+.ant-input-number.css-dev-only-do-not-override-2q8sxy:hover {
  border:1px solid #ea045e !important;
 }
-.ant-input-number.css-dev-only-do-not-override-2q8sxy.qty:focus-within {
+.ant-input-number.css-dev-only-do-not-override-2q8sxy:focus-within {
  border:1px solid #ea045e !important;
 }
 .ant-input-number.ant-input-number-input-wrap input{
-  padding:8px 10px !important;
+  padding:7px 10px !important;
 
 }
 .ant-input-number-handler-wrap {
@@ -394,7 +394,7 @@ span.ant-input-number-handler span{
   background: #ea045e !important;
 }
 input.ant-input-number-input {
-  padding:8px 10px !important;
+  padding:7px 10px !important;
 }
 .hotels-filter-form ul li.form-member .chosen-select {
   display: block;
