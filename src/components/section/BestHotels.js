@@ -2,8 +2,16 @@
 import PriceRangeSlider from "./PriceRangeSlider";
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
+import React, { useState, useEffect } from 'react';
+import { InputNumber, Select, Space  } from 'antd';
 
 const BestHotels = () => {
+  const handleChange = (value) => {
+    console.log('Number changed:', value);
+  };
+  // const handleChange = (value) => {
+  //   console.log(`selected ${value}`);
+  // };
   return (
     <>
       <section id="hotels" className="section wide-fat">
@@ -40,67 +48,99 @@ const BestHotels = () => {
                     </li>
 
                     <li className="form-member form-member1">
-                      <select className="chosen-select">
-                        <option value="">Hotel Name 1</option>
-
-                        <option value="">Hotel Name 2</option>
-
-                        <option value="">Hotel Name 3</option>
-
-                        <option value="">Hotel Name 4</option>
-
-                        <option value="">Hotel Name 5</option>
-
-                        <option value="">Hotel Name 6</option>
-                      </select>
+                      
+                          <Select
+      defaultValue="Hotel name-1"
+      className="chosen-select"
+      onChange={handleChange}
+      options={[
+        {
+          value: 'hotel1',
+          label: 'Hotel name-1',
+        },
+        {
+          value: 'hotel2',
+          label: 'Hotel name-2',
+        },
+        {
+          value: 'hotel3',
+          label: 'Hotel name-3',
+        },
+       
+      ]}
+    />
                     </li>
 
                     <li className="form-member form-member1">
-                      <select className="chosen-select">
-                        <option value="">Price 1</option>
 
-                        <option value="">Price 2</option>
-
-                        <option value="">Price 3</option>
-
-                        <option value="">Price 4</option>
-
-                        <option value="">Price 5</option>
-
-                        <option value="">Price 6</option>
-                      </select>
+                       
+                      <Select
+      defaultValue="Price 1"
+      className="chosen-select"
+      onChange={handleChange}
+      options={[
+        {
+          value: 'price1',
+          label: 'Price 1',
+        },
+        {
+          value: 'price2',
+          label: 'Price 2',
+        },
+        {
+          value: 'price3',
+          label: 'Price 3',
+        },
+       
+      ]}
+    />
                     </li>
 
                     <li className="form-member form-member1">
-                      <select className="chosen-select">
-                        <option value="">Guest Rating 1</option>
-
-                        <option value="">Guest Rating 2</option>
-
-                        <option value="">Guest Rating 3</option>
-
-                        <option value="">Guest Rating 4</option>
-
-                        <option value="">Guest Rating 5</option>
-
-                        <option value="">Guest Rating 6</option>
-                      </select>
+                      
+                      <Select
+      defaultValue="Guest Rating 1"
+      className="chosen-select"
+      onChange={handleChange}
+      options={[
+        {
+          value: 'rating1',
+          label: 'Guest Rating 1',
+        },
+        {
+          value: 'rating2',
+          label: 'Guest Rating 2',
+        },
+        {
+          value: 'rating3',
+          label: 'Guest Rating 3',
+        },
+       
+      ]}
+    />
                     </li>
 
                     <li className="form-member form-member1">
-                      <select className="chosen-select">
-                        <option value="">Reviews 1</option>
-
-                        <option value="">Reviews 2</option>
-
-                        <option value="">Reviews 3</option>
-
-                        <option value="">Reviews 4</option>
-
-                        <option value="">Reviews 5</option>
-
-                        <option value="">Reviews 6</option>
-                      </select>
+                      <Select
+      defaultValue="Reviews 1"
+      className="chosen-select"
+      onChange={handleChange}
+      options={[
+        {
+          value: 'reviews1',
+          label: 'Reviews 1',
+        },
+        {
+          value: 'reviews2',
+          label: 'Reviews 2',
+        },
+        {
+          value: 'reviews3',
+          label: 'Reviews 3',
+        },
+       
+      ]}
+    />
                     </li>
 
                     <li className="most-popular form-member">
@@ -172,12 +212,9 @@ const BestHotels = () => {
                               <br />
 
                               <div className="quantity">
-                                <input
-                                  id="adult"
-                                  className="qty"
-                                  type="number"
-                                />
+                              <InputNumber className="qty" min={1} max={10} defaultValue={5} onChange={handleChange} />
                               </div>
+                              
                             </div>
                           </div>
 
@@ -188,11 +225,15 @@ const BestHotels = () => {
                               <br />
 
                               <div className="quantity">
-                                <input
+                                {/* <input
                                   id="children"
                                   className="qty"
                                   type="text"
-                                />
+                                  value={count}
+                                /> */}
+                                <InputNumber className="qty" min={1} max={10} defaultValue={5} onChange={handleChange} />
+
+                            
                               </div>
                             </div>
                           </div>

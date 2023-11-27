@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1200px) {
+  #header .toggle-menu-holder .toggle-menu {
+    background-color: #fdbe19;
+  }
+  .tour-category-item .hotel-lists .hotel-list-item .entry-content {
+    float: inherit;
+  }
+}
 @media only screen and (max-width: 768px) {
   .md-none {
     display: none;
@@ -19,7 +27,7 @@
   .banner-form-wrapper {
     background-image: none;
     padding: 50px 0px 0 0px;
-    padding-top: 100px;
+    padding-top: 130px;
   }
   #our-travel {
     padding-top: 50px !important;
@@ -57,6 +65,33 @@
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
   }
+  a.btn-sm {
+    justify-content: center;
+  }
+
+  a.btn-sm i {
+    width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    height: 40px;
+  }
+  h1.page-title {
+    font-size: 31px;
+    margin-bottom: 15px;
+}
+#sliding-testimony .testimony-author, #sliding-testimony .impressive-figures-heading {
+  font-size: 28px;
+}
+#hotels {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9eff4;
+  padding: 0px 0 56px 0;
+}
+.hotels-filter-form ul li.form-member .chosen-select {
+  width: 100%;
+}
 }
 @media only screen and (max-width: 460px) {
   #header .toggle-menu-holder {

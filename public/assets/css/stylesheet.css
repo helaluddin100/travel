@@ -1655,7 +1655,7 @@ footer input[type="submit"] {
   top: 0;
   left: 0;
   color: #ffffff;
-  background: #8bcf17 url("images/arrow-right.png") 50% 50% no-repeat;
+  background: #ea045e url(images/arrow-right.png) 50% 50% no-repeat;
   text-align: center;
   display: block;
   opacity: 0;
@@ -2568,6 +2568,7 @@ form.hotels-filter-form a.chosen-single {
 }
 .location-search-widget form.location-search #hotel {
   background: #ffffff url("../../assets/images/magnify.png") 94% 50% no-repeat;
+  z-index: 111;
 }
 .location-search-widget form.location-search #hotel:focus {
   background: #ffffff url("images/magnify-active.png") 94% 50% no-repeat;

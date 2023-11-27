@@ -34,7 +34,7 @@ const HeroSlider = () => {
                         <a
                           className="nav-link"
                           data-toggle="tab"
-                          href="#home"
+                          href="#"
                           role="tab"
                         >
                           <i class="fa fa-hotel"></i> Hotels
@@ -49,7 +49,7 @@ const HeroSlider = () => {
                         <a
                           className="nav-link"
                           data-toggle="tab"
-                          href="#profile"
+                          href="#"
                           role="tab"
                         >
                           <i className="fa fa-plane"></i> Flights
@@ -64,7 +64,7 @@ const HeroSlider = () => {
                         <a
                           className="nav-link"
                           data-toggle="tab"
-                          href="#messages"
+                          href="#"
                           role="tab"
                         >
                           <i className="fa fa-cab"></i> Cars
@@ -80,7 +80,7 @@ const HeroSlider = () => {
                         <a
                           className="nav-link"
                           data-toggle="tab"
-                          href="#messages"
+                          href="#"
                           role="tab"
                         >
                           <i className="icon_pin"></i> Cities
