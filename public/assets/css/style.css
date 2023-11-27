@@ -405,8 +405,8 @@ a.btn-sm:hover {
 } */
 
 .ant-input-number.css-dev-only-do-not-override-2q8sxy.qty {
-  width: 100%;
-  border-radius: 4px;
+  width: 100% !important;
+  border-radius: 4px !important;
 }
 .ant-input-number.css-dev-only-do-not-override-2q8sxy.qty:focus {
  border:1px solid #ea045e !important;
