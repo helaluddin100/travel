@@ -364,13 +364,13 @@ a.btn-sm:hover {
   width: 100% !important;
   border-radius: 4px !important;
 };
-.ant-input-number.css-dev-only-do-not-override-2q8sxy:focus {
+.ant-input-number.css-2q8sxy:focus {
  border:1px solid #ea045e !important;
 }
-.ant-input-number.css-dev-only-do-not-override-2q8sxy:hover {
+.ant-input-number.css-2q8sxy:hover {
  border:1px solid #ea045e !important;
 }
-.ant-input-number.css-dev-only-do-not-override-2q8sxy:focus-within {
+.ant-input-number.css-2q8sxy:focus-within {
  border:1px solid #ea045e !important;
 }
 .ant-input-number.ant-input-number-input-wrap input{
