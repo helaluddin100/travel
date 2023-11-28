@@ -39,8 +39,9 @@
     display: none !important;
   }
   #header .toggle-menu-holder .menu-body {
-    margin-top: 30px;
+    margin-top: 18px;
     position: fixed;
+    width: 100%;
   }
   ul.nav.nav-tabs.flex-column {
     flex-direction: inherit !important;
@@ -59,6 +60,7 @@
   }
   #header .toggle-menu-holder .toggle-menu {
     position: relative !important;
+    top: 10px;
   }
   header#header {
     display: flex;
@@ -87,10 +89,22 @@
 #hotels {
   background-color: #ffffff;
   border-bottom: 1px solid #e9eff4;
-  padding: 0px 0 56px 0;
 }
 .hotels-filter-form ul li.form-member .chosen-select {
   width: 100%;
+}
+#header .branding {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.branding img {
+  width: 145px;
+}
+#header .toggle-menu-holder .menu-body ul li a {
+  min-width:100%;
+}
+.hotels-filter-form ul .short-by {
+  width: 100% !important;
 }
 }
 @media only screen and (max-width: 460px) {

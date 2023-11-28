@@ -29,7 +29,7 @@ function Header() {
                 </li>
 
                 <li className="menu-item destinations">
-                  <a href="destinations.html">
+                  <a href="#">
                     <i className="icon_pin"></i> Destinations
                   </a>
                 </li>
@@ -41,7 +41,7 @@ function Header() {
                 </li>
 
                 <li className="menu-item special-offers">
-                  <a href="special-offers.html">
+                  <a href="#">
                     <i className="icon_ribbon"></i> Special Offers
                   </a>
                 </li>
@@ -59,79 +59,13 @@ function Header() {
                 </li>
 
                 <li className="menu-item contact">
-                  <a href="page-site-map.html">
+                  <a href="#">
                     <i className="fa fa-user-circle-o"></i> Login
                   </a>
                 </li>
               </ul>
 
-              {/* <select className="top-drop-menu nav visible-sm visible-xs visible-md">
-                <optgroup label="Homepage">
-                  <option value="index.html">Homepage-1</option>
-
-                  <option value="index-2.html">Homepage-2</option>
-
-                  <option value="index-mini.html">Homepage-3</option>
-                </optgroup>
-
-                <optgroup label="Destinations">
-                  <option value="destinations.html">Destinations</option>
-                </optgroup>
-
-                <optgroup label="Our Travels">
-                  <option value="our-travel.html">Our Travel</option>
-
-                  <option value="our-travel-sidebar.html">
-                    Our Travel-Sidebar
-                  </option>
-
-                  <option value="our-travel-right-sidebar.html">
-                    Our Travel-Right Sidebar
-                  </option>
-
-                  <option value="our-travel-detail.html">
-                    Our Travel-Detail
-                  </option>
-                </optgroup>
-
-                <optgroup label="Special Offers">
-                  <option value="special-offers.html">Special Offers</option>
-                </optgroup>
-
-                <optgroup label="Hotels List">
-                  <option value="hotel-list.html">Hotel List</option>
-
-                  <option value="hotel-list-wide.html">Hotel List-Wide</option>
-
-                  <option value="hotel-list-right-sidebar.html">
-                    Hotel List-Sidebar
-                  </option>
-
-                  <option value="hotel-list-fullwidth.html">
-                    Hotel List-Fullwidth
-                  </option>
-                </optgroup>
-
-                <optgroup label="Hotels Detail">
-                  <option value="hotel-detail.html">Hotel Detail</option>
-
-                  <option value="hotel-detail.html">
-                    Hotel Detail-Travel Info
-                  </option>
-
-                  <option value="hotel-detail.html">
-                    Hotel Detail-Payment
-                  </option>
-
-                  <option value="hotel-detail.html">
-                    Hotel Detail-Confirm
-                  </option>
-                </optgroup>
-
-                <optgroup label="Contact">
-                  <option value="contact.html">Contact</option>
-                </optgroup>
-              </select> */}
+         
             </nav>
           </div>
         </div>

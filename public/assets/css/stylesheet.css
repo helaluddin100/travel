@@ -600,7 +600,7 @@ input.green:focus {
 }
 #header .toggle-menu-holder .toggle-menu:hover,
 #header .toggle-menu-holder .toggle-menu.active {
-  background-color: #ea045e;
+  background-color: #fdbe19;
 }
 #header .toggle-menu-holder .toggle-menu:after {
   content: "";
@@ -2170,7 +2170,7 @@ footer input[type="submit"] {
 }
 form.hotels-filter-form input[type="submit"] {
   text-indent: -9999px;
-  background: url("images/magnify.png") center center no-repeat;
+  background: url("../../assets/images/magnify.png") center center no-repeat;
   border: none;
   width: 18px;
   height: 40px;
