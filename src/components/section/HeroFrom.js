@@ -25,6 +25,17 @@ const HeroFrom = () => {
                         href="#home"
                         role="tab"
                       >
+                        <i className="fa fa-hotel"></i> VISA
+                      </a>
+                    </li>
+
+                    <li className="nav-item">
+                      <a
+                        className="nav-link active"
+                        data-toggle="tab"
+                        href="#home"
+                        role="tab"
+                      >
                         <i className="fa fa-hotel"></i> Hotels
                       </a>
                     </li>

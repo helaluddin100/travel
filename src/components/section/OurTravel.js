@@ -13,7 +13,7 @@ const OurTravel = () => {
         <div className="container">
           <article id="post-4" className="our-travel section-intro">
             <h1 className="page-title">
-              Our <span className="higlight">Travel</span>
+              Our <span className="higlight">HOTEL</span>
             </h1>
 
             <div className="entry-content">

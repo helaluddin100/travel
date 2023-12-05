@@ -46,11 +46,11 @@ function Header() {
                   </a>
                 </li>
 
-                <li className="menu-item hotel">
+                {/* <li className="menu-item hotel">
                   <a href="#">
                     <i className="icon_building_alt"></i> List
                   </a>
-                </li>
+                </li> */}
 
                 <li className="menu-item shortcodes">
                   <a href="#" className="active">
@@ -64,8 +64,6 @@ function Header() {
                   </a>
                 </li>
               </ul>
-
-         
             </nav>
           </div>
         </div>

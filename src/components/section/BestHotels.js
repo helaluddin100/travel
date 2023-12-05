@@ -18,7 +18,7 @@ const BestHotels = () => {
         <div className="container">
           <article id="post-5" className="hotels section-intro">
             <h1 className="page-title">
-              Best <span className="higlight">Hotels</span>
+            TOUR <span className="higlight">PACAKGE</span>
             </h1>
 
             <div className="entry-content">
