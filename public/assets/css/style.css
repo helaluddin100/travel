@@ -441,3 +441,8 @@ select.form-select {
 .sponser-section {
   margin-top: 20px;
 }
+.form-select:focus {
+  border-color: #ea045e;
+  outline: 0;
+  box-shadow: none;
+}

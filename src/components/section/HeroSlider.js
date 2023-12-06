@@ -102,55 +102,41 @@ const HeroSlider = () => {
                         role="tabpanel"
                       >
                         <div className="form-group margin-bottom-5px">
-                          <label>Destination</label>
+                          <label>Where am I From?</label>
                           <div className="destination">
-                            <input
-                              type="text"
-                              className="input-text full-width"
-                              placeholder="Enter Destination"
-                            />
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
                           </div>
                         </div>
                         <div className="form-group margin-bottom-5px">
-                          <label>Check-In</label>
+                          <label>Where am I Going?</label>
                           <div className="date-input">
-                            <input
-                              type="date"
-                              className="input-text datepicker full-width"
-                              placeholder="15 / 5 / 2017"
-                            />
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Traveling to</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
                           </div>
                         </div>
                         <div className="form-group margin-bottom-5px">
-                          <label>Check-Out</label>
+                          <label>Mobile Number</label>
                           <div className="date-input">
                             <input
-                              type="date"
+                              type="number"
                               className="input-text datepicker full-width"
-                              placeholder="15 / 5 / 2017"
+                              placeholder="+880"
                             />
-                          </div>
-                        </div>
-                        <div className="row margin-bottom-10px">
-                          <div className="form-group col">
-                            <label>Rooms</label>
-                            <div className="rooms">
-                              <input
-                                type="text"
-                                className="input-text full-width"
-                                placeholder="1"
-                              />
-                            </div>
-                          </div>
-                          <div className="form-group col">
-                            <label>Children</label>
-                            <div className="children">
-                              <input
-                                type="text"
-                                className="input-text full-width"
-                                placeholder="0"
-                              />
-                            </div>
                           </div>
                         </div>
                         <a
@@ -158,7 +144,7 @@ const HeroSlider = () => {
                           className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
                         >
                           <i className="fa fa-search"></i>{" "}
-                          <span>Hotel Search</span>
+                          <span>VISA SEARCH</span>
                         </a>
                       </div>
                       <div
