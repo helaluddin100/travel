@@ -446,3 +446,202 @@ select.form-select {
   outline: 0;
   box-shadow: none !important;
 }
+
+/* --------------page banner ================== */
+.page-banner img {
+  width: 100%;
+}
+.section-head {
+  text-align: center;
+}
+
+.package-section {
+  padding: 50px 0;
+}
+.section-head {
+  padding-bottom: 30px;
+}
+.section-head h2 {
+  font-size: 65px;
+  color: #0e89c4;
+}
+
+.section-head h3 {
+  font-size: 45px;
+  color: #ea045e;
+}
+.package-card-item {
+  border: 1px solid #dc3545;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.pack-name {
+  font-size: 36px;
+  color: #fff;
+  padding: 2px 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.pack-card1 {
+  background: rgb(138, 98, 14);
+  background: linear-gradient(
+    70deg,
+    rgba(138, 98, 14, 1) 0%,
+    rgba(1, 141, 194, 1) 100%
+  );
+}
+.pack-card2 {
+  background: rgb(1, 186, 194);
+  background: linear-gradient(
+    70deg,
+    rgba(1, 186, 194, 1) 0%,
+    rgba(14, 75, 138, 1) 100%
+  );
+}
+.pack-card3 {
+  background: rgb(1, 112, 194);
+  background: linear-gradient(
+    70deg,
+    rgba(1, 112, 194, 1) 0%,
+    rgba(138, 14, 114, 1) 83%
+  );
+}
+.price-card-details {
+  padding: 20px;
+}
+
+.price-card-details h4 {
+  font-size: 50px;
+  color: #686868;
+}
+
+ul.price-ul li p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #686868;
+}
+
+p.price-text {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #dc3545 !important;
+}
+
+ul.price-ul li {
+  line-height: 110%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+ul.price-ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+ul.price-ul {
+  margin-top: 25px;
+}
+
+button.apply-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  background: #817d7d;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.apply-btn.active {
+  background: #dc3545;
+}
+
+button.apply-btn:hover {
+  background: #dc3545;
+}
+
+.apply-btn-wrapper {
+  margin-top: 13px;
+}
+.requirment-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+ul.requirment-ul {
+  font-size: 20px;
+}
+.visa {
+  background-image: url(../img/visa.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.visa-form-input {
+  background: #fff;
+  padding: 30px;
+}
+
+.form-title {
+  width: fit-content;
+  background: #dc3545;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.form-title h3 {
+  font-size: 23px;
+}
+
+.form-control {
+  box-shadow: none;
+  font-size: 16px !important;
+  border-radius: 0 !important;
+}
+.visa-submit-btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #dc3545;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.form-control:focus {
+  border-color: #dc3545 !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 1100px) {
+  .section-head h2 {
+    font-size: 50px;
+  }
+  .section-head h3 {
+    font-size: 35px;
+  }
+  .pack-name {
+    font-size: 25px;
+  }
+  .price-card-details h4 {
+    font-size: 35px;
+}
+p.price-text {
+  font-size: 15px !important;}
+}
+ul.price-ul li p {
+  font-weight: 500;
+  color: #686868;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+  .section-head h2 {
+    font-size: 35px;
+  }
+  .section-head h3 {
+    font-size: 25px;
+  }}

@@ -105,7 +105,7 @@ const HeroSlider = () => {
                           <label>Where am I From?</label>
                           <div className="destination">
                             <select
-                              class="form-select"
+                              className="form-select"
                               aria-label="Default select example"
                             >
                               <option selected>Bangladesh - BD</option>
@@ -119,7 +119,7 @@ const HeroSlider = () => {
                           <label>Where am I Going?</label>
                           <div className="date-input">
                             <select
-                              class="form-select"
+                              className="form-select"
                               aria-label="Default select example"
                             >
                               <option selected>Traveling to</option>
