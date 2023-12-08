@@ -138,8 +138,9 @@ li.form-member.form-member1 .chosen-selectoption:hover {
   background: #fff;
 }
 .padding-30px {
-  padding: 30px;
+  padding: 15px;
 }
+
 img.hidden-xs {
   width: 100%;
 }
@@ -645,3 +646,50 @@ ul.price-ul li p {
   .section-head h3 {
     font-size: 25px;
   }}
+
+
+  .transfer-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.transfer-btn {
+  border: none;
+  background: #1db8c1;
+  color: #fff;
+  padding: 8px 16px;
+  transition: .3s;
+  font-weight: 600;
+}
+.transfer-btn.active{
+  background: #ea045e;
+}
+
+.enc-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 7px 5px;
+}
+
+.enc-btn {
+    border: none;
+    background: #ddd;
+    color: #1db8c1;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enc-wrapper p {
+    margin-bottom: 0;
+}.radio-input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
