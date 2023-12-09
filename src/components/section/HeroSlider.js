@@ -10,6 +10,15 @@ const HeroSlider = () => {
   const toggleActive = (index) => {
     setActiveFrom(index);
   };
+
+  const [transfer, setTransfer] = useState(1);
+
+  const toggleTransfer = (index) => {
+    setTransfer(index);
+  };
+
+  const [luggages, setLuggages] = useState(1);
+  const [passengers, setPassengers] = useState(1);
   return (
     <>
       <div className="banner-form-wrapper">
@@ -276,168 +285,390 @@ const HeroSlider = () => {
                         role="tabpanel"
                       >
                         <div className="transfer-filter">
-                          <button className="transfer-btn active">One way</button>
-                          <button className="transfer-btn">By the hour</button>
-                          <button className="transfer-btn">Charter</button>
+                          <button className={
+                            transfer === 1 ? "transfer-btn active" : "transfer-btn"
+                          }
+                            onClick={() => toggleTransfer(1)}>One way</button>
+                          <button className={
+                            transfer === 2 ? "transfer-btn active" : "transfer-btn"
+                          }
+                            onClick={() => toggleTransfer(2)}>By the hour</button>
+                          <button className={
+                            transfer === 3 ? "transfer-btn active" : "transfer-btn"
+                          }
+                            onClick={() => toggleTransfer(3)}>Charter</button>
                         </div>
                         {/* <!-- ====== Flights ====== --> */}
-                        <div className="form-group margin-bottom-5px">
-                          <label>Pick up</label>
-                          <div className="destination">
-                            <input
-                              type="text"
-                              className="input-text full-width"
-                              placeholder="Bangladesh - BD"
-                            />
+                        <div className={
+                          transfer === 1
+                            ? "one-way-form active"
+                            : "one-way-form"
+                        }>
+                          <div className="form-group margin-bottom-5px">
+                            <label>Pick up</label>
+                            <div className="destination">
+                              <input
+                                type="text"
+                                className="input-text full-width"
+                                placeholder="Bangladesh - BD"
+                              />
+                            </div>
                           </div>
-                        </div>
-                        <div className="form-group margin-bottom-5px">
-                          <label>Date/Time</label>
+                          <div className="form-group margin-bottom-5px">
+                            <label>Drop off</label>
+                            <div className="destination">
+                              <input
+                                type="text"
+                                className="input-text full-width"
+                                placeholder="Bangladesh - BD"
+                              />
+                            </div>
+                          </div>
+                          <div className="form-group margin-bottom-5px">
+                            <label>Date/Time</label>
+                            <div className="row">
+                              <div className="col-6">
+                                <div className="destination">
+                                  <input
+                                    type="date"
+                                    className="input-text full-width"
+                                    placeholder="Bangladesh - BD"
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-6">
+                                <div className="destination">
+                                  <input
+                                    type="time"
+                                    className="input-text full-width"
+                                    placeholder="Bangladesh - BD"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                           <div className="row">
                             <div className="col-6">
-                              <div className="destination">
-                                <input
-                                  type="date"
-                                  className="input-text full-width"
-                                  placeholder="Bangladesh - BD"
-                                />
+                              <div className="form-group margin-bottom-5px">
+                                <label>Passengers</label>
+                                <div className="enc-wrapper">
+                                  <button className="enc-btn" onClick={() => {
+                                    if (passengers > 1) {
+                                      setPassengers(passengers - 1);
+                                    }
+                                  }}>-</button>
+                                  <p>{passengers}</p>
+                                  <button className="enc-btn" onClick={() => {
+                                    if (passengers < 100) {
+                                      setPassengers(passengers + 1);
+                                    }
+                                  }}>+</button>
+                                </div>
                               </div>
                             </div>
+
                             <div className="col-6">
-                              <div className="destination">
+                              <div className="form-group margin-bottom-5px">
+                                <label>Luggages</label>
+                                <div className="enc-wrapper">
+                                  <button className="enc-btn" onClick={() => {
+                                    if (luggages > 1) {
+                                      setLuggages(luggages - 1);
+                                    }
+                                  }}>-</button>
+                                  <p>{luggages}</p>
+                                  <button className="enc-btn" onClick={() => {
+                                    if (luggages < 100) {
+                                      setLuggages(luggages + 1);
+                                    }
+                                  }}>+</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="radio-input-group">
+                            <p>Book return trip?</p>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="flexRadioDefault1"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexRadioDefault1"
+                              >
+                                Yes
+                              </label>
+
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="no"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="no"
+                              >
+                                No
+                              </label>
+
+                            </div>
+                          </div>
+
+                          <div className="col-md-12 p-0">
+                            <div className="form-group margin-bottom-5px">
+                              <label>Date/Time</label>
+                              <div className="row">
+                                <div className="col-6">
+                                  <div className="destination">
+                                    <input
+                                      type="date"
+                                      className="input-text full-width"
+                                      placeholder="Bangladesh - BD"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-6">
+                                  <div className="destination">
+                                    <input
+                                      type="time"
+                                      className="input-text full-width"
+                                      placeholder="Bangladesh - BD"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-md-12 p-0">
+                            <div className="radio-input-group">
+                              <p>Make ride non-refundable. </p>
+                              <div class="form-check">
                                 <input
-                                  type="time"
-                                  className="input-text full-width"
-                                  placeholder="Bangladesh - BD"
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="refundble"
+                                  id="refundble"
                                 />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-6">
-                            <div className="form-group margin-bottom-5px">
-                              <label>Passengers</label>
-                              <div className="enc-wrapper">
-                                <button className="enc-btn">+</button>
-                                <p>1</p>
-                                <button className="enc-btn">+</button>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-6">
-                            <div className="form-group margin-bottom-5px">
-                              <label>Luggages</label>
-                              <div className="enc-wrapper">
-                                <button className="enc-btn">+</button>
-                                <p>1</p>
-                                <button className="enc-btn">+</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                                <label
+                                  class="form-check-label"
+                                  for="refundble"
+                                >
+                                  Yes
+                                </label>
 
-                        <div className="radio-input-group">
-                          <p>Book return trip?</p>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="flexRadioDefault"
-                              id="flexRadioDefault1"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexRadioDefault1"
-                            >
-                              Yes
-                            </label>
-                            
-                          </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="flexRadioDefault"
-                              id="no"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="no"
-                            >
-                              No
-                            </label>
-                            
-                          </div>
-                        </div>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="refundble"
+                                  id="no"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="no"
+                                >
+                                  No
+                                </label>
 
-                        <div className="col-md-12 p-0">
-                        <div className="form-group margin-bottom-5px">
-                          <label>Date/Time</label>
+                              </div>
+                            </div>
+                          </div>
+                          <a
+                            href="#"
+                            className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
+                          >
+                            <i className="fa fa-search"></i>{" "}
+                            <span>Cities Search</span>
+                          </a>
+                        </div>
+                        <div className={
+                          transfer === 2
+                            ? "one-way-form active"
+                            : "one-way-form"
+                        }>
+                          <div className="form-group margin-bottom-5px">
+                            <label>Pick up</label>
+                            <div className="destination">
+                              <input
+                                type="text"
+                                className="input-text full-width"
+                                placeholder="Bangladesh - BD"
+                              />
+                            </div>
+                          </div>
+
+                          <div className="form-group margin-bottom-5px">
+                            <label>Duration</label>
+                            <div className="destination">
+                              <input
+                                type="text"
+                                className="input-text full-width"
+                                placeholder="3 Hours"
+                              />
+                            </div>
+                          </div>
+                          <div className="form-group margin-bottom-5px">
+                            <label>Date/Time</label>
+                            <div className="row">
+                              <div className="col-6">
+                                <div className="destination">
+                                  <input
+                                    type="date"
+                                    className="input-text full-width"
+                                    placeholder="Bangladesh - BD"
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-6">
+                                <div className="destination">
+                                  <input
+                                    type="time"
+                                    className="input-text full-width"
+                                    placeholder="Bangladesh - BD"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                           <div className="row">
                             <div className="col-6">
-                              <div className="destination">
-                                <input
-                                  type="date"
-                                  className="input-text full-width"
-                                  placeholder="Bangladesh - BD"
-                                />
+                              <div className="form-group margin-bottom-5px">
+                                <label>Passengers</label>
+                                <div className="enc-wrapper">
+                                  <button className="enc-btn">+</button>
+                                  <p>1</p>
+                                  <button className="enc-btn">+</button>
+                                </div>
                               </div>
                             </div>
                             <div className="col-6">
-                              <div className="destination">
-                                <input
-                                  type="time"
-                                  className="input-text full-width"
-                                  placeholder="Bangladesh - BD"
-                                />
+                              <div className="form-group margin-bottom-5px">
+                                <label>Luggages</label>
+                                <div className="enc-wrapper">
+                                  <button className="enc-btn">+</button>
+                                  <p>1</p>
+                                  <button className="enc-btn">+</button>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        </div>
-                        <div className="col-md-12 p-0">
-                        <div className="radio-input-group">
-                          <p>Make ride non-refundable. </p>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="refundble"
-                              id="refundble"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="refundble"
-                            >
-                              Yes
-                            </label>
-                            
+
+                          <div className="col-md-12 p-0">
+                            <div className="radio-input-group">
+                              <p>Make ride non-refundable. </p>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="refundble"
+                                  id="refundble"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="refundble"
+                                >
+                                  Yes
+                                </label>
+
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="refundble"
+                                  id="no"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="no"
+                                >
+                                  No
+                                </label>
+
+                              </div>
+                            </div>
                           </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="refundble"
-                              id="no"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="no"
-                            >
-                              No
+                          <a
+                            href="#"
+                            className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
+                          >
+                            <i className="fa fa-search"></i>{" "}
+                            <span>Cities Search</span>
+                          </a>
+                        </div>
+
+
+
+
+                        <div className={
+                          transfer === 3
+                            ? "one-way-form active"
+                            : "one-way-form"
+                        }>
+                          <div className="form-group margin-bottom-5px">
+                            <label>From / To
                             </label>
-                            
+                            <div className="destination">
+                              <input
+                                type="text"
+                                className="input-text full-width"
+                                placeholder="Bangladesh - BD"
+                              />
+                            </div>
                           </div>
+
+                          <div className="form-group margin-bottom-5px">
+                            <label>Duration</label>
+                            <div className="destination">
+                              <input
+                                type="text"
+                                className="input-text full-width"
+                                placeholder="3 Hours"
+                              />
+                            </div>
+                          </div>
+                          <div className="form-group margin-bottom-5px">
+                            <label>Date/Time</label>
+                            <div className="row">
+                              <div className="col-6">
+                                <div className="destination">
+                                  <input
+                                    type="date"
+                                    className="input-text full-width"
+                                    placeholder="Bangladesh - BD"
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-6">
+                                <div className="destination">
+                                  <input
+                                    type="time"
+                                    className="input-text full-width"
+                                    placeholder="Bangladesh - BD"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                          <a href="#"className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600">
+                            <i className="fa fa-search"></i>{" "}
+                            <span>Cities Search</span>
+                          </a>
                         </div>
-                        </div>
-                        <a
-                          href="#"
-                          className="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600"
-                        >
-                          <i className="fa fa-search"></i>{" "}
-                          <span>Cities Search</span>
-                        </a>
+
+
+
                         {/* <!-- ====== //  Flights ====== --> */}
                       </div>
                     </div>

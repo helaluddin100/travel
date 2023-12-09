@@ -629,9 +629,10 @@ ul.requirment-ul {
   }
   .price-card-details h4 {
     font-size: 35px;
-}
-p.price-text {
-  font-size: 15px !important;}
+  }
+  p.price-text {
+    font-size: 15px !important;
+  }
 }
 ul.price-ul li p {
   font-weight: 500;
@@ -645,50 +646,58 @@ ul.price-ul li p {
   }
   .section-head h3 {
     font-size: 25px;
-  }}
+  }
+}
 
-
-  .transfer-filter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
+.transfer-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .transfer-btn {
   border: none;
   background: #1db8c1;
   color: #fff;
-  padding: 8px 16px;
-  transition: .3s;
+  padding: 8px 0px;
+  transition: 0.3s;
   font-weight: 600;
+  width: 32%;
 }
-.transfer-btn.active{
+.transfer-btn.active {
   background: #ea045e;
 }
 
 .enc-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #ddd;
-    padding: 7px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 7px 5px;
 }
 
 .enc-btn {
-    border: none;
-    background: #ddd;
-    color: #1db8c1;
-    width: 15px;
-    height: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: none;
+  background: #ddd;
+  color: #1db8c1;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.one-way-form{
+  display:none;
+}
+.one-way-form.active{
+  display:block;
+}
 .enc-wrapper p {
-    margin-bottom: 0;
-}.radio-input-group {
+  margin-bottom: 0;
+}
+.radio-input-group {
   display: flex;
   align-items: center;
   gap: 10px;
